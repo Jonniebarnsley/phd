@@ -1,4 +1,5 @@
-# Antarctica's contribution to long-term future sea level rise:
-## Constraining uncertainty using the mid-Pliocene warm period
+# Antarctica's contribution to long-term future sea level rise
 
-A repositry of useful scripts and notebooks I have used during my PhD.
+Antarctica is the largest potential contributor to sea level rise, but is also the most uncertain. My PhD uses the BISICLES ice sheet model to investigate Antarctica's response to various climate forcings. Calibrating against past climates and the historical period, it seeks to fully explore uncertainty in future sea level projections.
+
+BISICLES was ran on the Leeds University [ARC](https://arcdocs.leeds.ac.uk/welcome.html) system. Scripts for running BISICLES and processing the outputs can be found in the [ARC submodule](https://github.com/Jonniebarnsley/ARC). Subsequent data analysis is done locally and recorded here. Summary data from the ensembles can be found in [data](https://github.com/Jonniebarnsley/phd/tree/main/data); the full dataset (totalling >30 TB) is available upon request. Please contact jonathan.barnsley@kcl.ac.uk for more details.
