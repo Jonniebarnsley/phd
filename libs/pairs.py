@@ -53,7 +53,7 @@ def plot_density(x, ax, label):
     ax.set_xlim((min(x), max(x)))
     ax.text(0.5, 0.8, label, transform=ax.transAxes, ha='center', va='center')
 
-def pairs(df: pd.DataFrame, ticks=None, labels=None, groupby=None, **kwargs) -> plt.figure:
+def plot(df: pd.DataFrame, ticks=None, labels=None, groupby=None, **kwargs) -> plt.figure:
 
     '''
     Creates a pairs plot for a perturbed parameter ensemble with kernel density estimates
