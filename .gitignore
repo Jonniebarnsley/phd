@@ -1,4 +1,5 @@
 .DS_Store
 .RData
 .RHistory
+.vscode
 __pycache__
