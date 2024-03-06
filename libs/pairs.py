@@ -27,7 +27,7 @@ def get_sci_notation(ax, which) -> str:
 
     return notation
 
-def plot_density(x, ax, label=None):
+def plot_density(x, ax, label=None) -> None:
 
     '''
     Calculates a kernel density estimate for a parameter and plots it on a specified axis.
