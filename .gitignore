@@ -2,4 +2,5 @@
 .RData
 .RHistory
 .vscode
+test*
 __pycache__
