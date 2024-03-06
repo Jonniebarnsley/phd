@@ -103,3 +103,5 @@ def sensitivity(df, output, mask=None, relabel={}, colors=None, **kwargs):
 
     axes[1][2].set_axis_off()
     fig.subplots_adjust(hspace=0.4, wspace=0.1)
+
+    return fig
