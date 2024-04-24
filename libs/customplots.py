@@ -68,6 +68,8 @@ def ts_with_hist(
 
     fig.subplots_adjust(wspace=0.05)
 
+    return fig
+
 def sensitivity(df, output, mask=None, relabel={}, colors=None, **kwargs):
 
     parameters = df.columns
@@ -105,3 +107,12 @@ def sensitivity(df, output, mask=None, relabel={}, colors=None, **kwargs):
     fig.subplots_adjust(hspace=0.4, wspace=0.1)
 
     return fig
+
+def save(fig: mpl.figure.Figure, name: str) -> None:
+
+    '''
+    Saves a figure as a pdf and png in the appropriate folders
+    '''
+
+    fig.savefig(f'plots/pdf/{name}.pdf', format='pdf')
+    fig.savefig(f'plots/png/{name}.png', format='png')
