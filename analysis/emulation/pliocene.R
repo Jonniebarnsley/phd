@@ -5,8 +5,8 @@ library(lhs)
 ############################### PART 1: Setting up the Emulator ##############################
 
 # import data
-setwd("~/code/phd/Emulation/Pliocene")
-data <- read.csv('pliocene_minus_control.csv')
+setwd("~/code/phd")
+data <- read.csv('data/pliocene_summary.csv')
 ensemble <- na.omit(dplyr::select(
   data,
   gamma0, 
@@ -18,7 +18,32 @@ ensemble <- na.omit(dplyr::select(
   Pliocene,
   Control,
   Plio_minus_ctrl
-  ))
+))
+
+tf <- c("cesm" = 3.66, "ccsm4uoft" = 2.22, "hadcm3" = 1.75, "cosmos" = 1.57)
+tf_trimmed <- c("cesm" = 1.5, "ccsm4uoft" = 0.75, "hadcm3" = 1.17, "cosmos" = 0.76)
+tf_all_depths <- c("cesm" = 5.63, "ccsm4uoft" = 4.57, "hadcm3" = 4.13, "cosmos" = 3.86)
+tf_all_depths_trimmed <- c("cesm" = 3.06, "ccsm4uoft" = 2.4, "hadcm3" = 2.1, "cosmos" = 1.92)
+tf_all_depths_basins <- c("cesm" = 4.65, "ccsm4uoft" = 3.8, "hadcm3" = 2.41, "cosmos" = 2.85)
+tf_all_depths <- c('cesm' = 5.63, 'ccsm4uoft' = 4.57, 'hadcm3' = 4.13, 'cosmos' = 3.86)
+
+pr <- c('cesm' = 2.1, 'ccsm4uoft' = 1.96, 'hadcm3' = 1.77, 'cosmos' = 1.56)
+pr_trimmed <- c('cesm'=1, 'ccsm4uoft'=0.85, 'hadcm3'=0.73, 'cosmos'=0.78)
+
+tas <- c('cesm' = -6.73, 'ccsm4uoft' = -10.25, 'hadcm3' = -10.72, 'cosmos' = -11.6)
+tas_trimmed <- c('cesm'=-25.32, 'ccsm4uoft'=-29.35, 'hadcm3'=-29.68, 'cosmos'=-29.22)
+
+ensemble$ocean_forcing <- tf_all_depths[ensemble$model]
+ensemble$interaction_g0_of2 <- ensemble$gamma0 * ensemble$ocean_forcing ^ 2
+ensemble$precip <- pr[ensemble$model]
+ensemble$interaction_pr_lrp <- ensemble$precip * ensemble$LRP
+ensemble$temp <- tas_trimmed[ensemble$model]
+
+#subset <- filter(ensemble, model=='cesm'); mean(subset$Pliocene)
+
+
+
+#ensemble <- subset(ensemble, gamma0<150000)
 
 # emulator design
 inputs <- dplyr::select(
@@ -27,66 +52,41 @@ inputs <- dplyr::select(
   UMV,
   LRP,
   PDDi,
-  WeertC
-  )
+  WeertC,
+  ocean_forcing,
+  precip,
+  #temp,
+  #interaction_g0_of2,
+  #interaction_pr_lrp,
+)
 
 # Create the pairs plot
-panel.corr <- function(x, y){
-  usr <- par("usr"); on.exit(par(usr))
-  par(usr = c(0, 1, 0, 1))
-  r <- round(cor(x, y), digits=3)
-  txt <- paste0("Corr: ", r)
-  text(0.5, 0.5, txt, cex = 1)
-}
+pairs(inputs)
 
-panel.density <- function(x, pch=NULL, cex=NULL, cex.axis=NULL){
-  #usr <- par('usr'); on.exit(par(usr))
-  dens <- density(x)
-  par(usr = c(min(x), max(x), 0, 1.5*max(dens$y)))
-  lines(dens)
-}
-
-install.packages('ggplot')
-library(ggplot)
-
-panel.scat <- function(x, y){
-  par(las = 0, cex.axis = 1.2)
-  axis(1, at=0, labels='0')
-  points(x, y, pch = 1, cex = 0.5, col = rgb(0, 0, 0, alpha=0.5))
-}
-
-nearest_order <- round(10^round(log10(mean(inputs$gamma0))))
-plot(inputs$gamma0/nearest_order, inputs$UMV, xlab=substr(as.character(nearest_order), 2, 10))
-
-options(scipen = -1)
-pairs(
-  inputs,
-  diag.panel = panel.density,
-  upper.panel = NULL,
-  lower.panel = panel.scat,
-  cex.labels=1,
-  gap=1.5
-  )
-
-plot(density(inputs$gamma0))
-log10(nearest_order)
-
+# normalize inputs
+normalized <- as.data.frame(scale(inputs))
 
 # emulator response
-output <- select(ensemble, Control)
+output <- as.data.frame(scale(ensemble$Pliocene))
+
 
 # set a linear mean basis function - tells the emulator that we expect some kind of 
 # relationship between the inputs and outputs. Will default to linear in the absence of data.
-trend <- as.matrix(cbind(1, inputs))
+trend <- as.matrix(cbind(1, normalized))
 
-# create model
-model <- rgasp(
-  design = inputs, 
-  response = output,
-  #nugget.est = TRUE, # nugget=TRUE accounts for factors not included in inputs (in this case, GCM)
+# create model for Pliocene outputs
+pliocene <- rgasp(
+  design = normalized,
+  response = ensemble$Pliocene,
   trend=trend,
-  kernel_type = 'matern_3_2',
-  )
+  kernel_type = 'matern_5_2',
+  lower_bound = T,
+  nugget.est = T, # nugget=TRUE accounts for factors not included in inputs (in this case, GCM)
+  #zero.mean='No',
+  #optimization = 'lbfgs',
+  #isotropic=F,
+  #alpha=rep(1.8, 5)
+)
 
 ########################## PART 2: Evaluating the Emulator ###############################
 
@@ -94,7 +94,7 @@ model <- rgasp(
 
 # check for inert inputs (inputs that do not evoke a statistically significant response
 # in the outputs)
-P <- findInertInputs(model)
+P <- findInertInputs(pliocene)
 
 ### LEAVE-ONE-OUT ANALYSIS ###
 
@@ -103,77 +103,72 @@ P <- findInertInputs(model)
 # custom functions for plotting these, including error bars and colouring according to
 # whether the actual value is within the emulator uncertainty.
 
-source("../LeaveOneOut.R")
+source("analysis/emulation/LeaveOneOut.R"); loo <- leave_one_out(pliocene)
 
-loo <- leave_one_out(model)
+# plot the simulator outputs against emulator predictions
+#pdf('./plots/leave_one_out.pdf')
+par(mfrow=c(1, 1)); plot(loo)
+#dev.off()
 
-pdf('./plots/leave_one_out.pdf')
-par(mfrow=c(1, 1)); plot.leave_one_out(loo)
-dev.off()
+# Normalized Euclidean Distance and RMSE can be used to quantitatively compare emulators
+summary(loo)
 
-summary.leave_one_out(loo)
-
-### SENSITIVITY ANALYSIS ###
+######################### SENSITIVITY ANALYSIS ##########################
 
 # We want to test how sensitive the outputs are to each input and what relationship they
 # have with sea level contribution.
 
-# Start by setting out limits of the parameter space
-LB <- c(9620, 6e17, 0, 0.008, 7600)
-UB <- c(471000, 1e21, 8e-4, 0.02, 62000)
-range <- UB-LB
-midpoints <- (LB+UB)/2
+source("analysis/emulation/main_effects.R")
 
-num.testpoints = 1000
-# iterate over parameters
-pdf('./plots/maineffects.pdf')
-par(mfrow=c(2,3)); for (i in 1:5) {
-  
-  # generate a sensitivity.inputs matrix which takes a range of points for our
-  # parameter and the midpoint value for every other parameter on every line
-  plot_param <- as.matrix(seq(LB[i], UB[i], length.out=num.testpoints))
-  sensitivity.inputs <- matrix(rep(midpoints, each = num.testpoints), nrow = num.testpoints)
-  sensitivity.inputs[, i] <- plot_param
-  
-  # define testing trend in the same way as the design trend
-  sensitivity.trend <- as.matrix(cbind(1, sensitivity.inputs))
-  
-  # emulate the output at each point
-  sensitivity.predict <- predict(
-    model,
-    sensitivity.inputs,
-    testing_trend=sensitivity.trend
-  )
-  
-  # plot args
-  xmin <- plot_param[1]
-  xmax <- plot_param[num.testpoints]
-  ymin <- min(sensitivity.predict$lower95)
-  ymax <- max(sensitivity.predict$upper95)
-  param <- colnames(inputs)[i]
-  
-  # make empty plot
-  plot(1, 
-       1,
-       type='l',
-       xlim=c(xmin, xmax),
-       ylim=c(ymin, ymax),
-       xlab=param,
-       ylab='sea level contribution (m)'
-  )
-  # shade 5-95% uncertainty region
-  polygon(
-    c(plot_param, rev(plot_param)), 
-    c(sensitivity.predict$lower95, rev(sensitivity.predict$upper95)), 
-    col='grey80', 
-    border=F
-    )
-  # plot emulator mean
-  lines(plot_param, sensitivity.predict$mean, type='l')
-}
-dev.off()
+#pdf('./plots/main_effects.pdf')
+main_effects(pliocene, inputs)
+#dev.off()
 
-### SEA LEVEL CONTRIBUTION ###
+######################### CONTROL #############################
+
+control <- rgasp(
+  design = normalized,
+  response = ensemble$Control,
+  trend=trend,
+  kernel_type = 'matern_3_2',
+  lower_bound = F,
+  nugget.est = F, # nugget=TRUE accounts for factors not included in inputs (in this case, GCM)
+  zero.mean='No',
+  #optimization = 'lbfgs',
+  #isotropic=F,
+  alpha=rep(1.7, 5)
+)
+P <- findInertInputs(control)
+
+
+loo <- leave_one_out(control)
+par(mfrow=c(1, 1)); plot(loo)
+summary(loo)
+
+main_effects(control, inputs)
+
+plio_minus_ctrl <- rgasp(
+  design = normalized,
+  response = ensemble$Plio_minus_ctrl,
+  trend=trend,
+  kernel_type = 'matern_5_2',
+  lower_bound = T,
+  nugget.est = TRUE, # nugget=TRUE accounts for factors not included in inputs (in this case, GCM)
+  zero.mean='No',
+  #optimization = 'lbfgs',
+  #isotropic=F,
+  alpha=rep(2, 5)
+)
+
+P <- findInertInputs(plio_minus_ctrl)
+
+loo <- leave_one_out(plio_minus_ctrl)
+par(mfrow=c(1, 1)); plot(loo)
+summary(loo)
+
+main_effects(plio_minus_ctrl, inputs)
+
+######################## SEA LEVEL CONTRIBUTION #########################
 
 # We want to re-sample the parameter space many times and create a histogram / probability
 # distribution for sea level contribution.
@@ -190,19 +185,19 @@ for(i in 1:5) {
 testing_trend <- cbind(1, LHS)
 
 # emulate the output at each point
-model.predict <- predict(
-  model, 
+pliocene.predict <- predict(
+  pliocene, 
   LHS,
   testing_trend=testing_trend
-  )
+)
 
 # kernel density estimate
-kde <- density(model.predict$mean)
+kde <- density(pliocene.predict$mean)
 kd <- density(ensemble$Control)
 
 # plot histogram with kernel density estimate overlay
 
-pdf('./plots/simulatorvsemulator.pdf')
+#pdf('./plots/simulatorvsemulator.pdf')
 par(mfrow=c(1, 2))
 hist(
   ensemble$Control, 
@@ -224,7 +219,7 @@ hist(
   main=''
 )
 lines(kde, lwd=2, col='black')
-dev.off()
+#dev.off()
 
 test <- leave_one_out_rgasp(model)
 plot(ensemble$Control, test$mean)
