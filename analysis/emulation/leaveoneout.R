@@ -1,3 +1,5 @@
+library(RobustGaSP)
+
 leave_one_out <- function(model) {
   
   # Takes an rgasp model as an input and performs leave one out analysis.
@@ -5,78 +7,23 @@ leave_one_out <- function(model) {
   # plotted and analysed.
   
   # extract information from the rgasp-class
-  inputs <- data.frame(slot(model, 'input'))
   output <- slot(model, 'output')
-  kernel <- slot(model, 'kernel_type')
-  nugget.est <- slot(model, 'nugget.est')
-  num_inputs <-  dim(inputs)[1]
   
-  # create empty data frame to store results
-  results <- data.frame(
-    Actual = numeric(0),
-    Predicted = numeric(0),
-    Lower95 = numeric(0),
-    Upper95 = numeric(0),
-    Success = numeric(0),
-    Input = list()
-  )
-
+  # use RobustGaSP leave one out function
   loo <- leave_one_out_rgasp(model)  
-
-  # for each point in the inputs
-  #for (i in 1:num_inputs) {
-    
-    #point <- inputs[i,]
-    #actual <- output[i,]
-    
-    # remove it from the inputs and output
-    #design <- inputs[-i,]
-    #response <- output[-i,]
-    
-    # define new trends
-    #trend <- as.matrix(cbind(1, design))
-    #testing_trend <- as.matrix(cbind(1, point))
-    
-    # create an emulator with the remaining inputs/outputs
-    #LOO_model <- rgasp(
-    #  design=design, 
-    #  response=response,
-    #  kernel_type=kernel,
-    #  nugget.est=nugget.est,
-    #  trend=trend
-    #)
-    
-    # ask the emulator to predict the original point
-    #LOO_model.predict <- predict(LOO_model, point, testing_trend=testing_trend)
-    #prediction <- LOO_model.predict$mean
-    #lower95 <- LOO_model.predict$lower95
-    #upper95 <- LOO_model.predict$upper95
-    
-    # if actual is within the emulator's uncertainty, call it a success
-    if (lower95 > actual || upper95 < actual) {
-      success <- FALSE
-    } else {
-      success <- TRUE
-    }
-    
-    # add this point to the results
-    new_line <- data.frame(
-      Actual = actual,
-      Predicted = prediction,
-      Lower95 = lower95,
-      Upper95 = upper95,
-      Success = success,
-      Input = list(point)
-    )
-    results <- rbind(results, new_line)
-  }
-  class(results) <- "leave_one_out"
-  return(results)
+  
+  # convert into dataframe and add some columns
+  df <- as.data.frame(loo)
+  df['actual'] <- as.numeric(output)
+  df['UB'] <- df$mean + 2 * df$sd
+  df['LB'] <- df$mean - 2 * df$sd
+  df['success'] <- (df$actual > df$LB & df$actual < df$UB)
+  
+  class(df) <- "leave_one_out"
+  return(df)
 }
 
-  # TO DO: calculate RMSE and R^2
-  # rmse <- sqrt(mean((results$Actual-results$Predicted)^2))
-  # r_squared <- cor(results$Actual, results$Predicted)^2
+length(inputs)
 
 plot.leave_one_out <- function(loo) {
   
@@ -86,28 +33,28 @@ plot.leave_one_out <- function(loo) {
   # emulator's 95% confidence interval.
   
   # leave_one_out class can't be subsetted, so define an equivalent dataframe
-  results <- data.frame(
-    Actual = loo$Actual,
-    Predicted = loo$Predicted,
-    Lower95 = loo$Lower95,
-    Upper95 = loo$Upper95,
-    Success = loo$Success
+  df <- data.frame(
+    actual = loo$actual,
+    mean = loo$mean,
+    LB = loo$LB,
+    UB = loo$UB,
+    success = loo$success
   )
   
   # separate into points the emulator successfully predicted and points it didn't
-  good <- subset(results, results$Success==TRUE)
-  bad <- subset(results, results$Success==FALSE)
+  good <- subset(df, df$success==T)
+  bad <- subset(df, df$success==F)
   
   # find bounds for axes
-  max <- max(results$Upper95)
-  min <- min(results$Lower95)
+  ymax <- max(df$UB)
+  ymin <- min(df$LB)
 
   #plot points and error bars for successes (in blue) and failures (in red)
   plot(
-    good$Actual, 
-    good$Predicted, 
-    xlim=c(min, max), 
-    ylim=c(min, max),
+    good$actual, 
+    good$mean, 
+    xlim=c(ymin, ymax), 
+    ylim=c(ymin, ymax),
     xlab='Actual sea level contribution (m)',
     ylab='Predicted sea level contribution (m)',
     col = 'cornflowerblue',
@@ -115,41 +62,46 @@ plot.leave_one_out <- function(loo) {
     cex = 0.5
   )
   points(
-    bad$Actual,
-    bad$Predicted,
+    bad$actual,
+    bad$mean,
     col = 'indianred',
     pch = 1,
     cex = 0.5
   )
   segments(
-    good$Actual,
-    good$Lower95,
-    good$Actual,
-    good$Upper95,
+    good$actual,
+    good$UB,
+    good$actual,
+    good$LB,
     col = rgb(0, 0, 1, alpha = 0.2),
     lwd = 2
-    )
+  )
   segments(
-    bad$Actual,
-    bad$Lower95,
-    bad$Actual,
-    bad$Upper95,
+    bad$actual,
+    bad$UB,
+    bad$actual,
+    bad$LB,
     col = rgb(1, 0, 0, alpha = 0.2),
     lwd = 2
-    )
-  lines(c(min-2, max+2), c(min-2, max+2)) # y=x
+  )
+  lines(c(ymin-2, ymax+2), c(ymin-2, ymax+2)) # y=x
 }
 
 summary.leave_one_out <- function(loo) {
   
-  fem <- loo$Predicted
-  f   <- loo$Actual
-  std <- (loo$Upper95 - loo$Predicted) / 2
-  N   <- length(loo$Predicted)
+  pass <- sum(loo$success)
+  fail <- length(loo$success) - pass
+  
+  fem <- loo$mean
+  f   <- loo$actual
+  std <- loo$sd
+  N   <- length(loo$mean)
   
   d   <- sqrt(sum((fem-f)^2/std))
   rmse <- sqrt(sum((fem-f)^2/N))
   
+  cat('Pass:', pass, '\n')
+  cat('Fail:', fail, '\n')
   cat('Normalized Euclidean Distance:', d, '\n')
   cat('RMSE:', rmse)
 }
