@@ -38,7 +38,7 @@ main_effects <- function(model, inputs) {
       1,
       type='l',
       xlim=c(-sqrt(3), sqrt(3)),
-      ylim=c(-15, 15), #c(ymin, ymax),
+      ylim=c(-15, 25), #c(ymin, ymax),
       xlab=name,
       ylab='sea level contribution (m)'
     )
