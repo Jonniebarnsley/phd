@@ -6,8 +6,16 @@ import matplotlib.ticker as mticker
 from itertools import product
 from libs.utils import round_sig_figs
 
+def ts(
+        df: pd.DataFrame,
+        ax: mpl.Axes,
+        **kwargs
+):
+    ax.plot(df, **kwargs)
+
 def ts_with_hist(
-        df: pd.DataFrame, 
+        df: pd.DataFrame,
+        ax: mpl.Axes,
         ylabel: str = None, 
         ylim: float = None, 
         title: str = '', 
