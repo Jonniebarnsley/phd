@@ -2,6 +2,7 @@
 	path = ARC
 	url = git@github.com:Jonniebarnsley/ARC.git
 
-[submodiule "ARCHER2"]
+
+[submodule "ARCHER2"]
 	path = ARCHER2
 	url = git@github.com:Jonniebarnsley/ARCHER2.git
