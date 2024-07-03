@@ -119,12 +119,14 @@ summary(loo)
 
 source("analysis/emulation/main_effects.R")
 
+# N.B. x-axis in main effects is currently s.d. from the mean, not absolute values.
+# I'll update this in a later build
 #pdf('./plots/pdf/main_effects_plio_minus_ctrl.pdf', height=2000, width=2000, res=250)
 main_effects(model, normalized)
 #dev.off()
 
 
-######################## Part 3: Sea level contribution ########################
+######################## PART 3: Sea level contribution ########################
 
 # We want to re-sample the parameter space many times and create a histogram / probability
 # distribution for sea level contribution.
