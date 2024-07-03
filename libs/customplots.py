@@ -8,14 +8,14 @@ from libs.utils import round_sig_figs
 
 def ts(
         df: pd.DataFrame,
-        ax: mpl.Axes,
+        ax: plt.axis,
         **kwargs
 ):
     ax.plot(df, **kwargs)
 
 def ts_with_hist(
         df: pd.DataFrame,
-        ax: mpl.Axes,
+        ax: plt.axis,
         ylabel: str = None, 
         ylim: float = None, 
         title: str = '', 
