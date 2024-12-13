@@ -1,104 +1,76 @@
-import os
-import re
-import sys
-import pandas as pd
+import argparse
 import xarray as xr
-import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
-from mpl_toolkits.axes_grid1 import Divider, Size
+from pathlib import Path
+from xarray import Dataset
+from matplotlib.animation import FuncAnimation, FFMpegWriter
+from utils import forceNamingConvention
 
-filename = sys.argv[1]
+def make_animation(ds: Dataset, variable: str, cmap: str='viridis') -> FuncAnimation:
 
-# load ensemble csv
-csvpath = '/Users/jonniebarnsley/Code/phd/Postprocessing/Pliocene_control/AIS_PPE_control_ensemble_SLC.csv'
-data = pd.read_csv(csvpath, index_col=0, dtype=float)
-data = data[data.index < 10_000]
-data = data[data.index > 0]
+    x=ds.x
+    y=ds.y
+    time=ds.time
 
-# get slc timeseries
-run_num = re.search('run(\d+)_control_thickness_0lev.nc', filename).group(1)
-run = data[run_num]
-slc = run.values
+    fig = plt.figure(figsize = (8, 8), dpi=300)
+    ax = plt.axes()
+    ax.set_aspect('equal')
+    
 
-# check if already processed
-mp4path = '/Users/jonniebarnsley/data/phd/Control/mp4s_timeseries/run{}_control_thickness.mp4'.format(run_num)
-if os.path.exists(mp4path):
-    sys.exit()
+    def update(frame):
 
-# load netcdf
-dir = '/Users/jonniebarnsley/data/phd/Control/thickness'
-filepath = os.path.join(dir, filename)
-ds = xr.open_dataset(filepath)
+        timeslice = ds.sel(time=frame)
+        data = timeslice[variable]
 
-x=ds.x
-y=ds.y
-t=ds.t
+        # plot data
+        ax.clear()
+        plot = ax.pcolormesh(x, y, data, shading='auto', cmap=cmap)
+        ax.set_title(f'year = {frame}')
+        ax.set_axis_off()
 
-# plot options
-font = {'weight' : 'normal',
-        'size'   : 8}
-mpl.rc('font', **font)
+        return plot
 
-fig = plt.figure(figsize=(8, 5))
+    animation = FuncAnimation(
+        fig, 
+        update, 
+        frames = time.values, 
+        blit=False
+        )
+    
+    return animation
 
-# spatial axis
-h = [Size.Fixed(0.0), Size.Fixed(4.5)]
-v = [Size.Fixed(0.0), Size.Fixed(4.5)]
-divider = Divider(fig, (0, 0, 1, 1), h, v, aspect=False)
-ax1 = fig.add_axes(divider.get_position(),
-                  axes_locator=divider.new_locator(nx=1, ny=1))
+def main(args) -> None:
 
-# timeseries axis
-h = [Size.Fixed(5), Size.Fixed(2.5)]
-v = [Size.Fixed(1.25), Size.Fixed(2.)]
-divider = Divider(fig, (0, 0, 1, 1), h, v, aspect=False)
-ax2 = fig.add_axes(divider.get_position(),
-                  axes_locator=divider.new_locator(nx=1, ny=1))
+    netcdf = Path(args.netcdf)
+    variable = args.variable
+    outfile = Path(args.outfile)
+    cmap = args.cmap if args.cmap else 'Blues'
 
-ax1.set_aspect('equal')
+    if outfile.is_file() and not args.overwrite:
+        print(f'{outfile.name} already exists')
+        return
 
-ax2.set_xlim([0, 10000])
-ax2.spines['bottom'].set_position('zero')
-ax2.spines['left'].set_position('zero')
-ax2.spines['top'].set_color('none')
-ax2.spines['right'].set_color('none')
-ax2.set_xlabel('time ($years$)')
-ax2.set_ylabel('sea level contribution ($m$)')
+    ds = xr.open_dataset(netcdf)
+    ds = forceNamingConvention(ds)
+    animation = make_animation(ds, variable, cmap=cmap)
+    writervideo = FFMpegWriter(fps=30, bitrate=5000)
+    animation.save(outfile, writer=writervideo, dpi=300)
 
-# plot timeseries and initial marker location
-ax2.plot(t, slc)
-point, = ax2.plot(30, 0, 'o', c='r')
+if __name__ == "__main__":
 
-def update(frame):
+    parser = argparse.ArgumentParser(
+        description="Process inputs and options"
+        )
+    
+    # add arguments
+    parser.add_argument("netcdf", type=str, help="netcdf to turn into an mp4") 
+    parser.add_argument("variable", type=str, help="variable to extract from netcdf")
+    parser.add_argument("outfile", type=str, help="save path for output mp4")
 
-    '''
-    Updates the figure at each frame with the appropriate thickness data
-    and point location.
-    '''
-    subsetted_ds = ds.sel(t=frame)
-    thk = subsetted_ds.thickness
+    # add optional arguments
+    parser.add_argument("--cmap", type=int, help="colormap for pcolormesh")
+    parser.add_argument("--overwrite", action="store_true", 
+                        help="Will overwrite outfile if it already exists")
 
-    # thickness data
-    ax1.clear()
-    plot = ax1.pcolormesh(x, y, thk, shading='auto', cmap='Blues')
-    ax1.set_title(f'year = {frame}')
-    ax1.set_axis_off()
-
-    # timeseries
-    sl = run.loc[run.index == frame].values
-    point.set_data([frame], [sl])
-
-    return plot, point
-
-ani = animation.FuncAnimation(
-    fig, 
-    update, 
-    frames = np.arange(30, 10020, 30), 
-    blit=True
-    )
-
-writervideo = animation.FFMpegWriter(fps=30)
-ani.save(f'/Users/jonniebarnsley/data/phd/Control/mp4s_timeseries/run{run_num}_thickness.mp4', writer=writervideo)
-plt.close(fig)
+    args = parser.parse_args()
+    main(args)

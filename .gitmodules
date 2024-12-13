@@ -1,8 +1,0 @@
-[submodule "ARC"]
-	path = ARC
-	url = git@github.com:Jonniebarnsley/ARC.git
-
-
-[submodule "ARCHER2"]
-	path = ARCHER2
-	url = git@github.com:Jonniebarnsley/ARCHER2.git
