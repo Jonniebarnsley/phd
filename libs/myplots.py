@@ -6,7 +6,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 from itertools import product
-from libs.utils import round_sig_figs
+from local.libs.utils import round_sig_figs
 
 def spatialPlot(ax: plt.Axes, da: xr.DataArray, **kwargs) -> None:
 
@@ -17,8 +17,10 @@ def spatialPlot(ax: plt.Axes, da: xr.DataArray, **kwargs) -> None:
     y = y - y.mean()
 
     kw = dict(central_latitude=-90, central_longitude=0, true_scale_latitude=-70)
-    ax.pcolormesh(x, y, da, transform = ccrs.Stereographic(**kw), **kwargs)
-    ax.coastlines(lw=0.1)
+    im = ax.pcolormesh(x, y, da, transform = ccrs.Stereographic(**kw), **kwargs)
+    ax.coastlines(lw=0.2)
+
+    return im
 
 def ts(
         df: pd.DataFrame,
