@@ -4,7 +4,7 @@ import xarray as xr
 from math import pi
 from pathlib import Path
 from xarray import DataArray, Dataset
-from libs.xy2ll import xy2ll
+from local.libs.xy2ll import xy2ll
 
 def checkDims(da: DataArray, dims: set) -> None:
 
@@ -80,8 +80,8 @@ def scaleFactor(da: DataArray, sgn: int) -> DataArray:
 def GoelzerSLC(
         thickness: DataArray, 
         z_base: DataArray,
-        rho_ice: int|float = 918,
-        rho_ocean: int|float = 1028,
+        rho_ice: int|float = 918.,
+        rho_ocean: int|float = 1028.,
         A_ocean: int|float = 3.625e14,
     ) -> DataArray:
 
@@ -131,7 +131,7 @@ def GoelzerSLC(
     SLC_pov = - (V_pov - V_pov.isel(time=0)) / A_ocean
 
     # Density correction, this time including floating ice
-    rho_water = 1000, # density of freshwater (kg m^-3)
+    rho_water = 1000. # density of freshwater (kg m^-3)
     V_den = thickness * (rho_ice/rho_water - rho_ice/rho_ocean) * dx**2 / k**2
     SLC_den = - (V_den - V_den.isel(time=0)) / A_ocean
 
