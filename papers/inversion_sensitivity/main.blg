@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: copernicus.bst
 Database file #1: references.bib
-You've used 20 entries,
+You've used 32 entries,
             2932 wiz_defined-function locations,
-            1171 strings with 15295 characters,
-and the built_in function-call counts, 22087 in all, are:
-= -- 2389
-> -- 1053
-< -- 6
-+ -- 452
-- -- 334
-* -- 1464
-:= -- 2284
-add.period$ -- 20
-call.type$ -- 20
-change.case$ -- 153
-chr.to.int$ -- 21
-cite$ -- 60
-duplicate$ -- 2087
-empty$ -- 1042
-format.name$ -- 393
-if$ -- 4313
+            1262 strings with 23594 characters,
+and the built_in function-call counts, 49398 in all, are:
+= -- 4714
+> -- 3553
+< -- 7
++ -- 1365
+- -- 1156
+* -- 3660
+:= -- 5600
+add.period$ -- 32
+call.type$ -- 32
+change.case$ -- 451
+chr.to.int$ -- 33
+cite$ -- 96
+duplicate$ -- 3966
+empty$ -- 1936
+format.name$ -- 1249
+if$ -- 9514
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 246
-newline$ -- 69
-num.names$ -- 80
-pop$ -- 921
+missing$ -- 603
+newline$ -- 105
+num.names$ -- 128
+pop$ -- 2129
 preamble$ -- 1
-purify$ -- 151
+purify$ -- 449
 quote$ -- 0
-skip$ -- 1326
+skip$ -- 2703
 stack$ -- 0
-substring$ -- 849
-swap$ -- 1827
+substring$ -- 1504
+swap$ -- 3567
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 177
+type$ -- 285
 warning$ -- 0
-while$ -- 105
+while$ -- 172
 width$ -- 0
-write$ -- 242
+write$ -- 386
