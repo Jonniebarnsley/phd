@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -53,6 +53,9 @@ Hansen, P.~C.: Analysis of {{Discrete Ill-Posed Problems}} by {{Means}} of the {
 
 \bibitem[{Hill et~al.(2021)Hill, Rosier, Gudmundsson, and Collins}]{hillQuantifyingPotentialFuture2021}
 Hill, E.~A., Rosier, S. H.~R., Gudmundsson, G.~H., and Collins, M.: Quantifying the Potential Future Contribution to Global Mean Sea Level from the {{Filchner}}--{{Ronne}} Basin, {{Antarctica}}, The Cryosphere, 15, 4675--4702, \doi{10.5194/tc-15-4675-2021}, 2021.
+
+\bibitem[{Jourdain et~al.(2020)Jourdain, {Asay-Davis}, Hattermann, Straneo, Seroussi, Little, and Nowicki}]{jourdainProtocolCalculatingBasal2020b}
+Jourdain, N.~C., {Asay-Davis}, X., Hattermann, T., Straneo, F., Seroussi, H., Little, C.~M., and Nowicki, S.: A Protocol for Calculating Basal Melt Rates in the {{ISMIP6 Antarctic}} Ice Sheet Projections, The Cryosphere, 14, 3111--3134, \doi{10.5194/tc-14-3111-2020}, 2020.
 
 \bibitem[{Larour et~al.(2012)Larour, Seroussi, Morlighem, and Rignot}]{larourContinentalScaleHigh2012}
 Larour, E., Seroussi, H., Morlighem, M., and Rignot, E.: Continental Scale, High Order, High Spatial Resolution, Ice Sheet Modeling Using the {{Ice Sheet System Model}} ({{ISSM}}), Journal of Geophysical Research: Earth Surface, 117, 2011JF002\,140, \doi{10.1029/2011JF002140}, 2012.

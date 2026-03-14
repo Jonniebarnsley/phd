@@ -235,9 +235,17 @@ Inverse methods produce a good fit to observed velocities, but this often result
 
 \noindent where $\dot{h}_{obs}$ is the observed rate of elevation change from \citep{smithPervasiveIceSheet2020} and $\nabla \cdot \left( \mathbf{u} h \right)$ is the flux divergence at the end of a relaxation with default parameter values. We set bounds of -1--2 ma\textsuperscript{-1} and apply a Gaussian filter to smooth out short-wavelength components of the flux divergence \citep{niasContrastingModelledSensitivity2016}. The beneficial effect of this is to correct a thickening bias over the Antarctic Peninsula and trans-Antarctic mountains, where our 1 km grid resolution is too coarse to resolve the dynamics of these smaller glaciers. However, the resulting surface mass balance is purely synthetic and a poor representation of reality. Nonetheless, it corrects the significant model drift that occurs over multiple centuries without the need for a control simulation. We therefore consider it to be adequate for the purposes of a sensitivity study.
 
-On top of this background surface mass balance, we apply a time-varying anomaly from the CESM2-WACCM climate model \citep{danabasogluCommunityEarthSystem2020} under the SSP5--8.5 emissions scenario, calculated following the ISMIP6 protocol \citep{nowickiExperimentalProtocolSea2020}. This was chosen for its strong climate forcing to maximise the signal-to-noise ratio in our results, but may not be representative of the most likely future climate.
+On top of this background surface mass balance, we apply a time-varying anomaly from the CESM2-WACCM climate model \citep{danabasogluCommunityEarthSystem2020} under the SSP5--8.5 emissions scenario, calculated following the ISMIP6 protocol \citep{nowickiExperimentalProtocolSea2020}. This was chosen for its strong climate forcing to maximise the signal-to-noise ratio in our results, but is not necessarily representative of the most likely future climate.
 
-CESM2-WACCM data was also used 
+We also apply a basal mass balance to floating ice using a quadratic parameterisation of ice shelf basal melt with respect to ocean thermal forcing \citep{jourdainProtocolCalculatingBasal2020b},
+
+\begin{align}
+    m(x, y) &= \gamma_0 \times {\left( \frac{\rho_{\text{sw}}c_{\text{pw}}}{\rho_\text{i} L_\text{f}} \right)}^2 \\ 
+    &\times {\left( \text{TF}(x, y, z_{\text{draft}}) - \delta T_{\text{sector}} \right)} \\ 
+    &\times |{\langle \text{TF} \rangle_{\text{draft} \in \text{sector}}} + \delta T_{\text{sector}}|,
+\end{align}
+
+Where $\gamma_0$ is an uncertain parameter that controls the sensitvity of ice shelf melt to increases in ocean temperature and salinity. $\rho_{\text{sw}}$ and $c_{\text{pw}}$ are the density and specific heat capacity of seawater, $\rho_\text{i}$ is the density of ice, and $L_\text{f}$ is the latent heat of fusion. $\text{TF}(x, y, z_{\text{draft}})$ is the ocean thermal forcing anomaly at the depth of the ice shelf draft, calculated from ocean temperature and salinity outputs from CESM2-WACCM. Anomalies are calculated with respect to the initial thermal forcing such that basal mass balance is zero upon initialisation. $\delta T_{\text{sector}}$ is a sector-specific offset according to the `MeanANT' calibrated values in \cite{jourdainProtocolCalculatingBasal2020b}.
 
 \subsection{Experimental design}
 
