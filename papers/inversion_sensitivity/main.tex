@@ -175,7 +175,7 @@ BISICLES solves the 2-dimensional L1L2 mass transport and stress balance equatio
     \mu(x, y, z) = \frac{1}{2 A_0 A(T) \tau^{n-1}},
 \end{equation}
 
-\noindent where $A(T)$ is a temperature-dependant Paterson rate factor \citep{cuffeyPhysicsGlaciers2010}. The 3-dimensional temperature field is derived from a 100,000-year thermal spin-up described in \citet{treversRetreatThwaitesGlacier2024}. $\tau$ is the deviatoric stress tensor and the flow law exponent $n$ is an uncertain parameter that we perturb in the ensemble. A correction factor, $A_0 = 100,000^{(3-n)}$, ensures that the effective viscosity is independant of $n$ at a reference stress of 100 kPa. Either side of this value, the flow law diverges from the $n=3$ case, but the effective viscosity is scaled by $\phi$ during the inverse problem so that the initial state matches observed ice velocities.
+\noindent where $A(T)$ is a temperature-dependant Paterson rate factor \citep{cuffeyPhysicsGlaciers2010}. The 3-dimensional temperature field is derived from a 100,000-year thermal spin-up described in \citet{treversRetreatThwaitesGlacier2024}. $\tau$ is the deviatoric stress tensor and the flow law exponent $n$ is an uncertain parameter that we perturb in the ensemble. A correction factor, $A_0 = 100,000^{(3-n)}$, ensures that the effective viscosity is independant of $n$ at a reference stress of 100 kPa. Either side of this value, the flow law diverges from the $n=3$ case, but the effective viscosity is scaled by $\phi$ during the inverse problem so that the initial state matches observed ice velocities. Antarctic sea level projections have been shown to be very sensitive to the choice of $n$ in BISICLES and in other ice sheet models \citep{martinRatesSeaLevelRise2026,getraerIncreasingGlenNye2025}.
 
 Basal sliding is governed by a pressure-limited Weertman-Coulomb sliding law derived from \citet{tsaiMarineIcesheetProfiles2015}, which allows for Weertman and Coulomb-like behaviour over hard and soft beds, respectively. The basal shear stress, $\tau_b$, is given by:
 \begin{equation}
@@ -209,21 +209,33 @@ We initialise BISICLES using an inverse method to solve for the basal friction c
     J_p = \frac{\alpha_C}{2}  \int_{\Omega_V} {|\nabla C|}^2 d\Omega_V + \frac{\alpha_{\phi}}{2}  \int_{\Omega_V} {|\nabla \phi|}^2 d\Omega_V.
 \end{equation}
 
-\noindent $\alpha_C$ and $\alpha_{\phi}$ are regularisation parameters that control the smoothness of $C$ and $\phi$, respectively, and are both perturbed in our ensemble. $\Omega_V$ is the domain over which velocities are observed, and $\mathbf{u}_{obs}$ are the observed surface velocities from \citet{rignotMEaSUREsInSARBasedAntarctica2017}.
+\noindent $\alpha_C$ and $\alpha_{\phi}$ are regularisation parameters that control the smoothness of $C$ and $\phi$, respectively. In this study, we treat both as uncertain parameters within a range of values determined by L-curve analysis. $\Omega_V$ is the domain over which velocities are observed, and $\mathbf{u}_{obs}$ are the observed surface velocities from \citet{rignotMEaSUREsInSARBasedAntarctica2017}.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/L-curve_C.png}
+    \caption{L-curves}\label{fig:L-curve_C}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/L-curve_Phi.png}
+    \caption{L-curves}\label{fig:L-curve_Phi}
+\end{figure}
 
 Since the Tsai sliding law is independent of $C$ in areas of low hydrostatic pressure, we solve the inverse problem using a simple linear sliding law that constrains C everywhere. For ensemble members with $m \neq 1$, we then adjust $C$ post-inversion such that basal drag (and therefore ice velocity) is equal on either side of the initialisation. This is done by scaling $C$ according to
 \begin{equation}
     C_m = C_{(m=1)} {\left( |\mathbf{u}| + \epsilon \right)}^{1-m},
 \end{equation}
 
-\noindent where $\epsilon = 10^{-5}$ is a small regularising term to prevent infinite friction values. Ideally, this would yield the same solution for basal friction regardless of the value of $m$ used in the inversion, although there can be differences due to the path-dependence of the solution \citep{wolovickRegularizationLcurvesIce2023a}. Nonetheless, we found that inversions with a linear sliding law were faster and more convenient than with $m \neq 1$.
+\noindent where $\epsilon = 10^{-5}$ is a small regularising term to prevent infinite friction values. Ideally, this would yield the same solution for basal friction regardless of the value of $m$ used in the inversion, although there can be differences due to the path-dependence of the solution \citep{wolovickRegularizationLcurvesIce2023}. Nonetheless, we found that inversions with a linear sliding law were faster and more convenient than with $m \neq 1$.
 
 The initial ice geometry is taken from BedMachine Antarctica v2 \citep{morlighemMEaSUREsBedMachineAntarctica2020}, the initial guess for $\phi$ is uniformly 1, and the initial guess for $C$ is calculated by equating basal drag to the driving stress. This yields
 \begin{equation}
-    C_{init} = \rho g h \nabla s |\mathbf{u}|^{-1},
+    C_{init} = \rho_i g h \nabla s |\mathbf{u}|^{-1},
 \end{equation}
 
-\noindent where $\rho = 917 kg m^{-3}$ is the density of ice and $g = 9.81$ is gravitational acceleration.
+\noindent where $\rho_i = 917 kg m^{-3}$ is the density of ice and $g = 9.81$ is gravitational acceleration.
 
 As is common with initialisation by inverse problem, we observe a short-term shock immediately after initialisation as the model adjusts to inconsistencies between the geometry and model physics. We therefore allow a 15-year relaxation period, during which we periodically resolve the inverse problem following~\cite{bevanAmundsenSeaEmbayment2023}. Throughout the relaxation, the thickness of floating ice shelves is held constant and we apply a surface mass balance from the MAR regional climate model \citep{agostaEstimationAntarcticSurface2019a}.
 
@@ -245,9 +257,30 @@ We also apply a basal mass balance to floating ice using a quadratic parameteris
     &\times |{\langle \text{TF} \rangle_{\text{draft} \in \text{sector}}} + \delta T_{\text{sector}}|,
 \end{align}
 
-Where $\gamma_0$ is an uncertain parameter that controls the sensitvity of ice shelf melt to increases in ocean temperature and salinity. $\rho_{\text{sw}}$ and $c_{\text{pw}}$ are the density and specific heat capacity of seawater, $\rho_\text{i}$ is the density of ice, and $L_\text{f}$ is the latent heat of fusion. $\text{TF}(x, y, z_{\text{draft}})$ is the ocean thermal forcing anomaly at the depth of the ice shelf draft, calculated from ocean temperature and salinity outputs from CESM2-WACCM. Anomalies are calculated with respect to the initial thermal forcing such that basal mass balance is zero upon initialisation. $\delta T_{\text{sector}}$ is a sector-specific offset according to the `MeanANT' calibrated values in \cite{jourdainProtocolCalculatingBasal2020b}.
+Where $\gamma_0$ is an uncertain parameter that controls the sensitvity of ice shelf melt to increases in ocean temperature and salinity. $\rho_{\text{sw}}$ and $c_{\text{pw}}$ are the density and specific heat capacity of seawater, $\rho_\text{i}$ is the density of ice, and $L_\text{f}$ is the latent heat of fusion. $\text{TF}(x, y, z_{\text{draft}})$ is the ocean thermal forcing anomaly at the depth of the ice shelf draft, calculated from ocean temperature and salinity outputs from CESM2-WACCM.\@ Anomalies are calculated with respect to the initial thermal forcing such that basal mass balance is zero upon initialisation. $\delta T_{\text{sector}}$ is a sector-specific offset according to the `MeanAnt' calibrated values in~\cite{jourdainProtocolCalculatingBasal2020b}.
 
-\subsection{Experimental design}
+\subsection{Experiment design}
+
+We consider six parameters in BISICLES, including two regularisation parameters in the inverse problem ($\alpha_{C}$ and $\alpha_{\phi}$). The four remaining parameters are selected for their prevalence in other sensitivity studies and their breadth across multiple ice sheet model components (Table~\ref{tab:parameters}). To explore the sensitivity to ice rheology, we perturb the flow law exponent, $n$ \citep{getraerIncreasingGlenNye2025,martinRatesSeaLevelRise2026}; for sensitivity to the form of the basal sliding relation, we perturb the friction exponent, $m$ \citep{ritzPotentialSealevelRise2015,brondexSensitivityCentennialMass2019}; for sensitivity to the rate of ice shelf melt, we perturb the ice-ocean heat flux, $\gamma$ \citep{hillQuantifyingPotentialFuture2021,coulonDisentanglingDriversFuture2024a,coulonShorttermUncertaintiesLongterm2025}; and for sensitivity to the solid-Earth response, we perturb the upper mantle viscosity, UMV\@ \citep{pollardVariationsAntarcticIce2017,kachuckRapidViscoelasticDeformation2020}. 
+
+We produce an `axial' ensemble, sampling 6-dimensional parameter space by perturbing one parameter at a time to its minimum and maximum value while holding the other parameters at their nominal value. The nominal value is either the arithmetic or geometric mean of its upper and lower bounds, and this is chosen for the regularisation parameters to coincide with the corner of the `L' (Figure ). Along with a central simulation with no parameters perturbed, this yields a total of 13 ensemble members. For each, we initialise by solving the inverse problem and then project the initial state forward under the same climate forcing. We consider the sensitivity of Antarctic sea level contribution to each parameter by finding the difference in values between simulations with its maximal and minimal value. This is a much more rudimentary measure of sensitivity than, for example, Sobol' sensitivity \citep{hillQuantifyingPotentialFuture2021,rosierCalibratedSeaLevel2025}, and it doesn't provide any information about the shape of the relationship between parameters and outputs, as would be possible with a full perturbed parameter ensemble. However, it requires far fewer simulations and is sufficient for a preliminary exploration of sensitivity before investing in a more comprehensive experiment design.
+
+\begin{table}[t]
+\caption{Perturbed parameters used in the ensemble.}\label{tab:parameters}
+\begin{tabular}{l l c c c}
+\tophline{}
+Parameter & Long name & Min. & Nominal & Max. \\
+\middlehline{}
+$\alpha_C$ & $C$-regularisation & $10^{-2}$ & $10^0$ & $10^2$ \\
+$\alpha_{\phi}$ & $\phi$-regularisation & $10^8$ & $10^{10}$ & $10^{12}$ \\
+$n$ & Flow law exponent & 2 & 3 & 4 \\
+$m$ & Sliding exponent & 1 & 3 & 5 \\
+$\gamma$ & Ice-ocean heat flux & 9619 & 39131 & 159189 \\
+$\mathrm{UMV}$ & Upper mantle viscosity & $6 \times 10^{18}$ & $2.45 \times 10^{19}$ & $10^{21}$ \\
+\bottomhline{}
+\end{tabular}
+\end{table}
+
 
 
 \section{Results}
@@ -291,10 +324,7 @@ The timescale dependance of our results highlight the importance of considering 
 
 \conclusions  %% \conclusions[modified heading if necessary]
 
-•	The sensitivity of Antarctic SLC to regularisation parameters may be dependent on the model, forcing, timescale, domain, and resolution used in the experiment. \\
-•	Results are likely to also vary with the type of regularisation and gradient descent used in the inverse problem (sort of included in ‘model’). \\
-•	‘Initial state uncertainty’ as seen in initMIP is still much larger than what we have explored here, which makes sense because it covers multiple initialisation techniques. \\
-•	Using range as a measure of sensitivity is less preferable to something such as Sobol’ sensitivity. However, these quick tests provide a basis to then go on and do larger PPEs. \\
+We have explored the sensitivity of Antarctic sea level contribution to regularisation hyperparameters in the inverse problem and compared it with other commonly perturbed parameters. Using the BISICLES ice sheet model, the inverse problem solves for a spatially-varying friction coefficient ($C$) and viscosity coefficient ($\phi$). We find that sensitivity to friction-regularisation is much lower than in an equivalent study for the Amundsen Sea Embayment and suggest that this is due to a difference in model domains and resolution, particularly the inculusion of large slow-moving regions of East Antarctica in our experiment. We find that sensitivity to viscosity-regularisation is high relative to other parameters on a century-timescale, but that this sensitivity declines over time as dynamical parameters dominate the multi-century response. This remains a valid approach to exploring initial state uncertainty in modelling experiments that initialise using inverse methods. However, we advise future experiments of this kind to consider the model, domain, resolution, and timescale of their experiment before choosing parameters to perturb, and warn that even if these parameters are included, it may not even then fully sample the uncertainty associated with the inverse problem.
 
 %% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
 %% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
