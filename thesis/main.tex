@@ -1,0 +1,40 @@
+\documentclass[10pt]{report}
+
+\usepackage{natbib}     % bibliography
+\usepackage{xcolor}     % text colours
+\usepackage{siunitx}    % units
+
+% figures
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+% font
+\usepackage{helvet}
+\usepackage[T1]{fontenc}    % font encoding for funny characters
+\usepackage{textcomp}       % tilde and other symbols
+\renewcommand{\familydefault}{\sfdefault}
+
+% line spacing
+\usepackage{setspace}
+\doublespacing
+
+% custom commands
+\newcommand\todo[1]{\textbf{\textcolor{red}{TODO: #1}}}   % define \todo{}
+\newcommand\note[1]{\textbf{\textcolor{blue}{NOTE: #1}}}   % define \note{}
+
+\title{Exploring uncertainty in Antarctica's future sea level contribution}
+\author{Jonathan Barnsley}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\include{chapters/Literature_review}
+\include{chapters/chapter2}
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}
