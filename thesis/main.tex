@@ -3,6 +3,8 @@
 \usepackage{natbib}     % bibliography
 \usepackage{xcolor}     % text colours
 \usepackage{siunitx}    % units
+\usepackage{amsmath}    % maths
+\usepackage{bm}         % bold symbols
 
 % figures
 \usepackage{graphicx}
@@ -21,6 +23,16 @@
 % custom commands
 \newcommand\todo[1]{\textbf{\textcolor{red}{TODO: #1}}}   % define \todo{}
 \newcommand\note[1]{\textbf{\textcolor{blue}{NOTE: #1}}}   % define \note{}
+
+\newcommand{\wordcount}{% word count over the entire document
+  \immediate\write18{texcount -1 -sum -merge \jobname.tex > \jobname.wc}%
+  \input{\jobname.wc} words%
+}
+
+\newcommand{\sectioncount}[1]{% word count over a section
+  \immediate\write18{texcount -sub=subsection -merge \jobname.tex | grep "#1" | sed "s/+/\\n/g" | head -1 | tr -d " " > \jobname.wc}%
+  \input{\jobname.wc} words%
+}
 
 \title{Exploring uncertainty in Antarctica's future sea level contribution}
 \author{Jonathan Barnsley}
