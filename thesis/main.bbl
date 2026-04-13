@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Assmann and Timmermann, 2005]{assmannVariabilityDenseWater2005}
+Assmann, K.~M. and Timmermann, R. (2005).
+\newblock Variability of dense water formation in the {{Ross Sea}}.
+\newblock {\em Ocean Dynamics}, 55(2):68--87.
+
 \bibitem[Brachfeld et~al., 2003]{brachfeldHoloceneHistoryLarsenA2003}
 Brachfeld, S., Domack, E., Kissel, C., Laj, C., Leventer, A., Ishman, S., Gilbert, R., Camerlenghi, A., and Eglinton, L.~B. (2003).
 \newblock Holocene history of the {{Larsen-A Ice Shelf}} constrained by geomagnetic paleointensity dating.
@@ -99,15 +104,30 @@ Hogg, A.~E. and Gudmundsson, G.~H. (2017).
 \newblock Impacts of the {{Larsen-C Ice Shelf}} calving event.
 \newblock {\em Nature Climate Change}, 7(8):540--542.
 
+\bibitem[Jacobs, 1991]{jacobsNatureSignificanceAntarctic1991}
+Jacobs, S.~S. (1991).
+\newblock On the nature and significance of the {{Antarctic Slope Front}}.
+\newblock {\em Marine Chemistry}, 35(1-4):9--24.
+
 \bibitem[Joughin et~al., 2003]{joughinTimingRecentAccelerations2003}
 Joughin, I., Rignot, E., Rosanova, C.~E., Lucchitta, B.~K., and Bohlander, J. (2003).
 \newblock Timing of {{Recent Accelerations}} of {{Pine Island Glacier}}, {{Antarctica}}: {{RECENT ACCELERATIONS OF PINE ISLAND GLACIER}}.
 \newblock {\em Geophysical Research Letters}, 30(13).
 
+\bibitem[Klinck and Dinniman, 2010]{klinckExchangeShelfBreak2010}
+Klinck, J.~M. and Dinniman, M.~S. (2010).
+\newblock Exchange across the shelf break at high southern latitudes.
+\newblock {\em Ocean Science}, 6(2):513--524.
+
 \bibitem[Larour et~al., 2012]{larourContinentalScaleHigh2012}
 Larour, E., Seroussi, H., Morlighem, M., and Rignot, E. (2012).
 \newblock Continental scale, high order, high spatial resolution, ice sheet modeling using the {{Ice Sheet System Model}} ({{ISSM}}).
 \newblock {\em Journal of Geophysical Research: Earth Surface}, 117(F1):2011JF002140.
+
+\bibitem[Lee and Feldstein, 2013]{leeDetectingOzoneGreenhouse2013}
+Lee, S. and Feldstein, S.~B. (2013).
+\newblock Detecting {{Ozone-}} and {{Greenhouse Gas}}--{{Driven Wind Trends}} with {{Observational Data}}.
+\newblock {\em Science}, 339(6119):563--567.
 
 \bibitem[Lipscomb et~al., 2019]{lipscombDescriptionEvaluationCommunity2019}
 Lipscomb, W.~H., Price, S.~F., Hoffman, M.~J., Leguy, G.~R., Bennett, A.~R., Bradley, S.~L., Evans, K.~J., Fyke, J.~G., Kennedy, J.~H., Perego, M., Ranken, D.~M., Sacks, W.~J., Salinger, A.~G., Vargo, L.~J., and Worley, P.~H. (2019).
@@ -128,6 +148,11 @@ Millstein, J.~D., Minchew, B.~M., and Pegler, S.~S. (2022).
 Morris, E.~M. and Vaughan, D.~G. (2013).
 \newblock Spatial and {{Temporal Variation}} of {{Surface Temperature}} on the {{Antarctic Peninsula And The Limit}} of {{Viability}} of {{Ice Shelves}}.
 \newblock In Domack, E., Levente, A., Burnet, A., Bindschadler, R., Convey, P., and Kirby, M., editors, {\em Antarctic {{Research Series}}}, pages 61--68. American Geophysical Union, Washington, D. C.
+
+\bibitem[Orsi et~al., 1995]{orsiMeridionalExtentFronts1995}
+Orsi, A.~H., Whitworth, T., and Nowlin, W.~D. (1995).
+\newblock On the meridional extent and fronts of the {{Antarctic Circumpolar Current}}.
+\newblock {\em Deep Sea Research Part I: Oceanographic Research Papers}, 42(5):641--673.
 
 \bibitem[Otosaka et~al., 2023]{otosakaMassBalanceGreenland2023a}
 Otosaka, I.~N., Shepherd, A., Ivins, E.~R., Schlegel, N.-J., Amory, C., Van Den~Broeke, M.~R., Horwath, M., Joughin, I., King, M.~D., Krinner, G., Nowicki, S., Payne, A.~J., Rignot, E., Scambos, T., Simon, K.~M., Smith, B.~E., S{\o}rensen, L.~S., Velicogna, I., Whitehouse, P.~L., A, G., Agosta, C., Ahlstr{\o}m, A.~P., Blazquez, A., Colgan, W., Engdahl, M.~E., Fettweis, X., Forsberg, R., Gall{\'e}e, H., Gardner, A., Gilbert, L., Gourmelen, N., Groh, A., Gunter, B.~C., Harig, C., Helm, V., Khan, S.~A., Kittel, C., Konrad, H., Langen, P.~L., Lecavalier, B.~S., Liang, C.-C., Loomis, B.~D., McMillan, M., Melini, D., Mernild, S.~H., Mottram, R., Mouginot, J., Nilsson, J., No{\"e}l, B., Pattle, M.~E., Peltier, W.~R., Pie, N., Roca, M., Sasgen, I., Save, H.~V., Seo, K.-W., Scheuchl, B., Schrama, E. J.~O., Schr{\"o}der, L., Simonsen, S.~B., Slater, T., Spada, G., Sutterley, T.~C., Vishwakarma, B.~D., Van~Wessem, J.~M., Wiese, D., Van Der~Wal, W., and Wouters, B. (2023).
@@ -179,6 +204,11 @@ Rosier, S. H.~R., Gudmundsson, G.~H., Jenkins, A., and Naughten, K.~A. (2025).
 \newblock Calibrated sea level contribution from the {{Amundsen Sea}} sector, {{West Antarctica}}, under {{RCP8}}.5 and {{Paris 2C}} scenarios.
 \newblock {\em The Cryosphere}, 19(7):2527--2557.
 
+\bibitem[Ryan et~al., 2016]{ryanWarmInflowEastern2016}
+Ryan, S., Schr{\"o}der, M., Huhn, O., and Timmermann, R. (2016).
+\newblock On the warm inflow at the eastern boundary of the {{Weddell Gyre}}.
+\newblock {\em Deep Sea Research Part I: Oceanographic Research Papers}, 107:70--81.
+
 \bibitem[Schr{\"o}der et~al., 2019]{schroderFourDecadesAntarctic2019}
 Schr{\"o}der, L., Horwath, M., Dietrich, R., Helm, V., Van Den~Broeke, M.~R., and Ligtenberg, S. R.~M. (2019).
 \newblock Four decades of {{Antarctic}} surface elevation changes from multi-mission satellite altimetry.
@@ -219,6 +249,11 @@ Shepherd, A., Wingham, D., Payne, T., and Skvarca, P. (2003).
 \newblock Larsen {{Ice Shelf Has Progressively Thinned}}.
 \newblock {\em Science}, 302(5646):856--859.
 
+\bibitem[Si et~al., 2023]{siHeatTransportAntarctic2023}
+Si, Y., Stewart, A.~L., and Eisenman, I. (2023).
+\newblock Heat transport across the {{Antarctic Slope Front}} controlled by cross-slope salinity gradients.
+\newblock {\em Science Advances}, 9(18):eadd7049.
+
 \bibitem[Siegert et~al., 2001]{siegertPhysicalChemicalBiological2001}
 Siegert, M.~J., {Ellis-Evans}, J.~C., Tranter, M., Mayer, C., Petit, J.-R., Salamatin, A., and Priscu, J.~C. (2001).
 \newblock Physical, chemical and biological processes in {{Lake Vostok}} and other {{Antarctic}} subglacial lakes.
@@ -228,6 +263,16 @@ Siegert, M.~J., {Ellis-Evans}, J.~C., Tranter, M., Mayer, C., Petit, J.-R., Sala
 Smith, B., Fricker, H.~A., Gardner, A.~S., Medley, B., Nilsson, J., Paolo, F.~S., Holschuh, N., Adusumilli, S., Brunt, K., Csatho, B., Harbeck, K., Markus, T., Neumann, T., Siegfried, M.~R., and Zwally, H.~J. (2020).
 \newblock Pervasive ice sheet mass loss reflects competing ocean and atmosphere processes.
 \newblock {\em Science}, 368(6496):1239--1242.
+
+\bibitem[Spence et~al., 2014]{spenceRapidSubsurfaceWarming2014}
+Spence, P., Griffies, S.~M., England, M.~H., Hogg, A.~M., Saenko, O.~A., and Jourdain, N.~C. (2014).
+\newblock Rapid subsurface warming and circulation changes of {{Antarctic}} coastal waters by poleward shifting winds.
+\newblock {\em Geophysical Research Letters}, 41(13):4601--4610.
+
+\bibitem[Talley, 2013]{talleyClosureGlobalOverturning2013}
+Talley, L.~D. (2013).
+\newblock Closure of the {{Global Overturning Circulation Through}} the {{Indian}}, {{Pacific}}, and {{Southern Oceans}}: {{Schematics}} and {{Transports}}.
+\newblock {\em Oceanography}, 26:80--97.
 
 \bibitem[Turner et~al., 2009]{turnerRecordLowSurface2009}
 Turner, J., Anderson, P., Lachlan-Cope, T., Colwell, S., Phillips, T., Kirchgaessner, A., Marshall, G.~J., King, J.~C., Bracegirdle, T., Vaughan, D.~G., Lagun, V., and Orr, A. (2009).
@@ -259,9 +304,29 @@ Wang, L., Davis, J.~L., and Howat, I.~M. (2021).
 \newblock Complex {{Patterns}} of {{Antarctic Ice Sheet Mass Change Resolved}} by {{Time}}-{{Dependent Rate Modeling}} of {{GRACE}} and {{GRACE Follow}}-{{On Observations}}.
 \newblock {\em Geophysical Research Letters}, 48(1):e2020GL090961.
 
+\bibitem[Wang et~al., 2025]{wangWaterMassesSouthern2025}
+Wang, Z., Li, Y., Shi, J., Zhang, Z., Liu, C., Zhou, M., and Wei, Z. (2025).
+\newblock Water masses in the {{Southern Ocean}}: Variability, trends, and drivers.
+\newblock {\em Acta Oceanologica Sinica}, 44(3):35--56.
+
+\bibitem[Wang et~al., 2023]{wangMultiscaleOceanicHeat2023}
+Wang, Z., Liu, C., Cheng, C., Qin, Q., Yan, L., Qian, J., Sun, C., and Zhang, L. (2023).
+\newblock On the {{Multiscale Oceanic Heat Transports Toward}} the {{Bases}} of the {{Antarctic Ice Shelves}}.
+\newblock {\em Ocean-Land-Atmosphere Research}, 2:0010.
+
+\bibitem[Waugh et~al., 2013]{waughRecentChangesVentilation2013}
+Waugh, D.~W., Primeau, F., DeVries, T., and Holzer, M. (2013).
+\newblock Recent {{Changes}} in the {{Ventilation}} of the {{Southern Oceans}}.
+\newblock {\em Science}, 339(6119):568--570.
+
 \bibitem[Weertman, 1983]{weertmanCREEPDEFORMATIONICE1983}
 Weertman, J. (1983).
 \newblock {{CREEP DEFORMATION OF ICE}}.
 \newblock {\em Annual Review of Earth and Planetary Sciences}, 11(1):215--240.
+
+\bibitem[Whitworth et~al., 2013]{whitworthWaterMassesMixing2013}
+Whitworth, T., Orsi, A.~H., Kim, S.-J., Nowlin, W.~D., and Locarnini, R.~A. (2013).
+\newblock Water {{Masses}} and {{Mixing Near}} the {{Antarctic Slope Front}}.
+\newblock In Jacobs, S.~S. and Weiss, R.~F., editors, {\em Antarctic {{Research Series}}}, pages 1--27. American Geophysical Union, Washington, D. C.
 
 \end{thebibliography}
