@@ -6,45 +6,45 @@ A level-1 auxiliary file: chapters/chapter2.aux
 The style file: apalike.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for ""
-You've used 66 entries,
+You've used 113 entries,
             1935 wiz_defined-function locations,
-            938 strings with 26702 characters,
-and the built_in function-call counts, 38297 in all, are:
-= -- 3446
-> -- 2769
-< -- 23
-+ -- 1032
-- -- 1028
-* -- 3905
-:= -- 6800
-add.period$ -- 201
-call.type$ -- 66
-change.case$ -- 840
-chr.to.int$ -- 66
-cite$ -- 66
-duplicate$ -- 964
-empty$ -- 2014
-format.name$ -- 1118
-if$ -- 7103
+            1227 strings with 44877 characters,
+and the built_in function-call counts, 69864 in all, are:
+= -- 6171
+> -- 5473
+< -- 32
++ -- 2066
+- -- 2054
+* -- 7286
+:= -- 12495
+add.period$ -- 342
+call.type$ -- 113
+change.case$ -- 1588
+chr.to.int$ -- 113
+cite$ -- 113
+duplicate$ -- 1625
+empty$ -- 3415
+format.name$ -- 2203
+if$ -- 12804
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 65
-newline$ -- 332
-num.names$ -- 202
-pop$ -- 710
+missing$ -- 112
+newline$ -- 567
+num.names$ -- 343
+pop$ -- 1358
 preamble$ -- 1
-purify$ -- 840
+purify$ -- 1588
 quote$ -- 0
-skip$ -- 720
+skip$ -- 1206
 stack$ -- 0
-substring$ -- 2381
-swap$ -- 97
-text.length$ -- 4
+substring$ -- 4069
+swap$ -- 149
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 396
+type$ -- 678
 warning$ -- 0
-while$ -- 245
+while$ -- 421
 width$ -- 0
-write$ -- 862
+write$ -- 1473
 (There was 1 warning)

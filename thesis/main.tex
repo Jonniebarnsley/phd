@@ -1,10 +1,19 @@
 \documentclass[10pt]{report}
 
+% ---- Packages ----
 \usepackage{natbib}     % bibliography
 \usepackage{xcolor}     % text colours
 \usepackage{siunitx}    % units
 \usepackage{amsmath}    % maths
-\usepackage{bm}         % bold symbols
+\usepackage{booktabs}   % tables
+
+% captions
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+
+% references
+\usepackage[hidelinks]{hyperref} 
+\usepackage{cleveref}
 
 % figures
 \usepackage{graphicx}
@@ -14,13 +23,15 @@
 \usepackage{helvet}
 \usepackage[T1]{fontenc}    % font encoding for funny characters
 \usepackage{textcomp}       % tilde and other symbols
+\usepackage{bm}             % bold symbols
 \renewcommand{\familydefault}{\sfdefault}
 
 % line spacing
 \usepackage{setspace}
+%\onehalfspacing
 \doublespacing
 
-% custom commands
+% ---- Custom commands ----
 \newcommand\todo[1]{\textbf{\textcolor{red}{TODO: #1}}}   % define \todo{}
 \newcommand\note[1]{\textbf{\textcolor{blue}{NOTE: #1}}}   % define \note{}
 
@@ -34,6 +45,7 @@
   \input{\jobname.wc} words%
 }
 
+% ---- Document ----
 \title{Exploring uncertainty in Antarctica's future sea level contribution}
 \author{Jonathan Barnsley}
 \date{\today}

@@ -1,33 +1,30 @@
-\contentsline {chapter}{\numberline {1}Literature Review}{3}{}%
-\contentsline {section}{\numberline {1.1}Sea level}{3}{}%
-\contentsline {subsection}{\numberline {1.1.1}Sea level and coastal communities}{3}{}%
-\contentsline {subsection}{\numberline {1.1.2}Global Mean Sea Level rise}{4}{}%
-\contentsline {section}{\numberline {1.2}The Antarctic Ice Sheet}{4}{}%
-\contentsline {subsection}{\numberline {1.2.1}Key regions of Antarctica}{4}{}%
-\contentsline {subsection}{\numberline {1.2.2}Recent observed changes}{6}{}%
-\contentsline {subsection}{\numberline {1.2.3}Antarctica in past climates}{9}{}%
-\contentsline {section}{\numberline {1.3}Ice sheet dynamics}{9}{}%
-\contentsline {subsection}{\numberline {1.3.1}Ice rheology*}{9}{}%
-\contentsline {subsection}{\numberline {1.3.2}Ice-atmosphere interactions*}{9}{}%
-\contentsline {subsection}{\numberline {1.3.3}Ice-ocean interactions}{9}{}%
-\contentsline {subsection}{\numberline {1.3.4}Calving and hydrofracture*}{11}{}%
-\contentsline {subsection}{\numberline {1.3.5}Subglacial hydrology*}{11}{}%
-\contentsline {subsection}{\numberline {1.3.6}Ice sheet instability}{11}{}%
-\contentsline {subsection}{\numberline {1.3.7}Solid Earth effects}{11}{}%
-\contentsline {section}{\numberline {1.4}Ice sheet modelling}{11}{}%
-\contentsline {subsection}{\numberline {1.4.1}Stokes flow}{12}{}%
-\contentsline {subsection}{\numberline {1.4.2}Constitutive relation}{13}{}%
-\contentsline {subsection}{\numberline {1.4.3}Approximations in ice flow models}{14}{}%
-\contentsline {subsection}{\numberline {1.4.4}Basal sliding}{15}{}%
-\contentsline {subsection}{\numberline {1.4.5}Surface mass balance*}{15}{}%
-\contentsline {subsection}{\numberline {1.4.6}Sub-shelf melting}{15}{}%
-\contentsline {subsection}{\numberline {1.4.7}Glacial isostatic adjustment}{15}{}%
-\contentsline {section}{\numberline {1.5}Projections of the Antarctic ice sheet}{15}{}%
-\contentsline {subsection}{\numberline {1.5.1}Century-scale projections}{15}{}%
-\contentsline {subsection}{\numberline {1.5.2}Millennium-scale projections*}{15}{}%
-\contentsline {subsection}{\numberline {1.5.3}Uncertainty Quantification}{15}{}%
-\contentsline {section}{\numberline {1.6}Uncertainty quantification*}{15}{}%
-\contentsline {subsection}{\numberline {1.6.1}Experiment design}{15}{}%
-\contentsline {subsection}{\numberline {1.6.2}Gaussian Process Emulation}{15}{}%
-\contentsline {subsection}{\numberline {1.6.3}Calibration}{15}{}%
-\contentsline {chapter}{\numberline {2}Methods}{16}{}%
+\contentsline {chapter}{\numberline {1}Literature Review}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}The Antarctic Ice Sheet}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Geographical setting}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Recent observed changes}{7}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Antarctica in past climates}{10}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Ice sheet dynamics}{12}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Ice rheology*}{12}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Ice-atmosphere interactions*}{12}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Ice-ocean interactions}{13}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Calving and hydrofracture*}{14}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Subglacial hydrology*}{14}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Ice sheet instability}{15}{subsection.1.3.6}%
+\contentsline {subsection}{\numberline {1.3.7}Solid Earth effects}{17}{subsection.1.3.7}%
+\contentsline {section}{\numberline {1.4}Ice sheet modelling}{18}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Stokes flow}{18}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Constitutive relation}{19}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Approximations in ice flow models}{20}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Basal sliding}{21}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Surface mass balance*}{21}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Sub-shelf melting}{21}{subsection.1.4.6}%
+\contentsline {subsection}{\numberline {1.4.7}Glacial isostatic adjustment}{21}{subsection.1.4.7}%
+\contentsline {section}{\numberline {1.5}Projections of the Antarctic ice sheet}{21}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Multi-century-scale projections}{21}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Uncertainty Quantification}{21}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Uncertainty quantification*}{21}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Experiment design}{21}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Gaussian Process Emulation}{21}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Calibration}{21}{subsection.1.6.3}%
+\contentsline {chapter}{\numberline {2}Methods}{22}{chapter.2}%
