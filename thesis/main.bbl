@@ -35,10 +35,30 @@ Batchelor, C.~L., Christie, F. D.~W., Ottesen, D., Montelli, A., Evans, J., Dowd
 \newblock Rapid, buoyancy-driven ice-sheet retreat of hundreds of metres per day.
 \newblock {\em Nature}, 617(7959):105--110.
 
+\bibitem[Benn and {\AA}str{\"o}m, 2018]{bennCalvingGlaciersIce2018}
+Benn, D.~I. and {\AA}str{\"o}m, J.~A. (2018).
+\newblock Calving glaciers and ice shelves.
+\newblock {\em Advances in Physics: X}, 3(1):1513819.
+
+\bibitem[Bennett, 2003]{bennettIceStreamsArteries2003}
+Bennett, M.~R. (2003).
+\newblock Ice streams as the arteries of an ice sheet: Their mechanics, stability and significance.
+\newblock {\em Earth-Science Reviews}, 61(3-4):309--339.
+
 \bibitem[Bertram et~al., 2018]{bertramPlioceneDeglacialEvent2018}
 Bertram, R.~A., Wilson, D.~J., {van de Flierdt}, T., McKay, R.~M., Patterson, M.~O., {Jimenez-Espejo}, F.~J., Escutia, C., Duke, G.~C., {Taylor-Silva}, B.~I., and Riesselman, C.~R. (2018).
 \newblock Pliocene deglacial event timelines and the biogeochemical response offshore {{Wilkes Subglacial Basin}}, {{East Antarctica}}.
 \newblock {\em Earth and Planetary Science Letters}, 494:109--116.
+
+\bibitem[Bindschadler et~al., 2011]{bindschadlerGettingAntarcticaNew2011}
+Bindschadler, R., Choi, H., Wichlacz, A., Bingham, R., Bohlander, J., Brunt, K., Corr, H., Drews, R., Fricker, H., Hall, M., Hindmarsh, R., Kohler, J., Padman, L., Rack, W., Rotschky, G., Urbini, S., Vornberger, P., and Young, N. (2011).
+\newblock Getting around {{Antarctica}}: New high-resolution mappings of the grounded and freely-floating boundaries of the {{Antarctic}} ice sheet created for the {{International Polar Year}}.
+\newblock {\em The Cryosphere}, 5(3):569--588.
+
+\bibitem[Blasco et~al., 2024]{blascoAntarcticTippingPoints2024}
+Blasco, J., Tabone, I., {Moreno-Parada}, D., Robinson, A., {Alvarez-Solas}, J., Pattyn, F., and Montoya, M. (2024).
+\newblock Antarctic tipping points triggered by the mid-{{Pliocene}} warm climate.
+\newblock {\em Climate of the Past}, 20(9):1919--1938.
 
 \bibitem[Boumis et~al., 2023]{boumisCoevolutionExtremeSea2023}
 Boumis, G., Moftakhari, H.~R., and Moradkhani, H. (2023).
@@ -54,15 +74,29 @@ Brachfeld, S., Domack, E., Kissel, C., Laj, C., Leventer, A., Ishman, S., Gilber
 Bradley, A.~T., Bett, D.~T., Williams, C.~R., Arthern, R.~J., Holland, P.~R., Bryne, J., and Edwards, T.~L. (2025).
 \newblock Quantifying and attributing the role of anthropogenic climate change in industrial-era retreat of {{Pine Island Glacier}}.
 
+\bibitem[Bulthuis et~al., 2019]{bulthuisUncertaintyQuantificationMulticentennial2019}
+Bulthuis, K., Arnst, M., Sun, S., and Pattyn, F. (2019).
+\newblock Uncertainty quantification of the multi-centennial response of the {{Antarctic}} ice sheet to climate change.
+\newblock {\em The Cryosphere}, 13(4):1349--1380.
+
 \bibitem[Burke et~al., 2018]{burkePlioceneEoceneProvide2018}
 Burke, K.~D., Williams, J.~W., Chandler, M.~A., Haywood, A.~M., Lunt, D.~J., and {Otto-Bliesner}, B.~L. (2018).
 \newblock Pliocene and {{Eocene}} provide best analogs for near-future climates.
 \newblock {\em Proceedings of the National Academy of Sciences}, 115(52):13288--13293.
 
+\bibitem[Chambers et~al., 2022]{chambersMassLossAntarctic2022}
+Chambers, C., Greve, R., Obase, T., Saito, F., and {Abe-Ouchi}, A. (2022).
+\newblock Mass loss of the {{Antarctic}} ice sheet until the year 3000 under a sustained late-21st-century climate.
+\newblock {\em Journal of Glaciology}, 68(269):605--617.
+
 \bibitem[Clerc et~al., 2019]{clercMarineIceCliff2019}
 Clerc, F., Minchew, B.~M., and Behn, M.~D. (2019).
 \newblock Marine {{Ice Cliff Instability Mitigated}} by {{Slow Removal}} of {{Ice Shelves}}.
 \newblock {\em Geophysical Research Letters}, 46(21):12108--12116.
+
+\bibitem[Collins et~al., 2013]{collins2013long}
+Collins, M., Knutti, R., Gutowski, W., Brooks, H., Shindell, D., and Webb, R. (2013).
+\newblock Long-term climate change: Projections, commitments and irreversibility.
 
 \bibitem[Cook and Vaughan, 2010]{cookOverviewArealChanges2010}
 Cook, A.~J. and Vaughan, D.~G. (2010).
@@ -104,6 +138,11 @@ Davis, C.~H., Li, Y., McConnell, J.~R., Frey, M.~M., and Hanna, E. (2005).
 \newblock Snowfall-{{Driven Growth}} in {{East Antarctic Ice Sheet Mitigates Recent Sea-Level Rise}}.
 \newblock {\em Science}, 308(5730):1898--1901.
 
+\bibitem[Davison et~al., 2023]{davisonAnnualMassBudget2023}
+Davison, B.~J., Hogg, A.~E., Gourmelen, N., Jakob, L., Wuite, J., Nagler, T., Greene, C.~A., Andreasen, J., and Engdahl, M.~E. (2023).
+\newblock Annual mass budget of {{Antarctic}} ice shelves from 1997 to 2021.
+\newblock {\em Science Advances}, 9(41):eadi0186.
+
 \bibitem[Dawson et~al., 2024]{dawsonHeterogeneousBasalThermal2024}
 Dawson, E.~J., Schroeder, D.~M., Chu, W., Mantelli, E., and Seroussi, H. (2024).
 \newblock Heterogeneous {{Basal Thermal Conditions Underpinning}} the {{Ad\'elie}}-{{George V Coast}}, {{East Antarctica}}.
@@ -128,6 +167,16 @@ DeConto, R.~M., Pollard, D., Alley, R.~B., Velicogna, I., Gasson, E., Gomez, N.,
 Doake, C. S.~M. and Vaughan, D.~G. (1991).
 \newblock Rapid disintegration of the {{Wordie Ice Shelf}} in response to atmospheric warming.
 \newblock {\em Nature}, 350(6316):328--330.
+
+\bibitem[Dolan et~al., 2018]{dolanHighClimateModel2018}
+Dolan, A.~M., De~Boer, B., Bernales, J., Hill, D.~J., and Haywood, A.~M. (2018).
+\newblock High climate model dependency of {{Pliocene Antarctic}} ice-sheet predictions.
+\newblock {\em Nature Communications}, 9(1):2799.
+
+\bibitem[Dolan et~al., 2012]{dolanPlioceneIceSheet2012}
+Dolan, A.~M., Koenig, S.~J., Hill, D.~J., Haywood, A.~M., and DeConto, R.~M. (2012).
+\newblock Pliocene {{Ice Sheet Modelling Intercomparison Project}} ({{PLISMIP}}) -- experimental design.
+\newblock {\em Geoscientific Model Development}, 5(4):963--974.
 
 \bibitem[Domack et~al., 2005]{domackStabilityLarsenIce2005}
 Domack, E., Duran, D., Leventer, A., Ishman, S., Doane, S., McCallum, S., Amblas, D., Ring, J., Gilbert, R., and Prentice, M. (2005).
@@ -154,6 +203,11 @@ Edwards, T.~L., Nowicki, S., Marzeion, B., Hock, R., Goelzer, H., Seroussi, H., 
 \newblock Projected land ice contributions to twenty-first-century sea level rise.
 \newblock {\em Nature}, 593(7857):74--82.
 
+\bibitem[Eyring et~al., 2016]{eyringOverviewCoupledModel2016}
+Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer, R.~J., and Taylor, K.~E. (2016).
+\newblock Overview of the {{Coupled Model Intercomparison Project Phase}} 6 ({{CMIP6}}) experimental design and organization.
+\newblock {\em Geoscientific Model Development}, 9(5):1937--1958.
+
 \bibitem[Favier et~al., 2014]{favierRetreatPineIsland2014}
 Favier, L., Durand, G., Cornford, S.~L., Gudmundsson, G.~H., Gagliardini, O., {Gillet-Chaulet}, F., Zwinger, T., Payne, A.~J., and Le~Brocq, A.~M. (2014).
 \newblock Retreat of {{Pine Island Glacier}} controlled by marine ice-sheet instability.
@@ -164,10 +218,25 @@ Favier, L., Durand, G., Cornford, S.~L., Gudmundsson, G.~H., Gagliardini, O., {G
 \newblock Ocean, {{Cryosphere}} and {{Sea Level Change}}.
 \newblock In {\em Climate {{Change}} 2021: {{The Physical Science Basis}}. {{Contribution}} of {{Working Group I}} to the {{Sixth Assessment Report}} of the {{Intergovernmental Panel}} on {{Climate Change}}}, pages 1211--1362. {Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA}.
 
+\bibitem[Friedl et~al., 2020]{friedlRemoteSensingGlacier2020}
+Friedl, P., Weiser, F., Fluhrer, A., and Braun, M.~H. (2020).
+\newblock Remote sensing of glacier and ice sheet grounding lines: {{A}} review.
+\newblock {\em Earth-Science Reviews}, 201:102948.
+
+\bibitem[Garbe et~al., 2020]{garbeHysteresisAntarcticIce2020}
+Garbe, J., Albrecht, T., Levermann, A., Donges, J.~F., and Winkelmann, R. (2020).
+\newblock The hysteresis of the {{Antarctic Ice Sheet}}.
+\newblock {\em Nature}, 585(7826):538--544.
+
 \bibitem[Gardner et~al., 2018]{gardnerIncreasedWestAntarctic2018}
 Gardner, A.~S., Moholdt, G., Scambos, T., Fahnstock, M., Ligtenberg, S., Van Den~Broeke, M., and Nilsson, J. (2018).
 \newblock Increased {{West Antarctic}} and unchanged {{East Antarctic}} ice discharge over the last 7 years.
 \newblock {\em The Cryosphere}, 12(2):521--547.
+
+\bibitem[Gasson et~al., 2016]{gassonModelingOxygenIsotope2016}
+Gasson, E., DeConto, R.~M., and Pollard, D. (2016).
+\newblock Modeling the oxygen isotope composition of the {{Antarctic}} ice sheet and its significance to {{Pliocene}} sea level.
+\newblock {\em Geology}, 44(10):827--830.
 
 \bibitem[Getraer and Morlighem, 2025]{getraerIncreasingGlenNye2025}
 Getraer, B. and Morlighem, M. (2025).
@@ -184,30 +253,70 @@ Glen, J.~W. (1955).
 \newblock The creep of polycrystalline ice.
 \newblock {\em Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences}, 228(1175):519--538.
 
+\bibitem[Goelzer et~al., 2025]{goelzerInteractiveCouplingGreenland2025}
+Goelzer, H., Langebroek, P.~M., Born, A., Hofer, S., Haubner, K., Petrini, M., Leguy, G., Lipscomb, W.~H., and {Thayer-Calder}, K. (2025).
+\newblock Interactive coupling of a {{Greenland}} ice sheet model in {{NorESM2}}.
+\newblock {\em Geoscientific Model Development}, 18(20):7853--7867.
+
 \bibitem[Gohl et~al., 2021]{gohlEvidenceHighlyDynamic2021}
 Gohl, K., Uenzelmann-Neben, G., Gille-Petzoldt, J., Hillenbrand, C.-D., Klages, J.~P., Bohaty, S.~M., Passchier, S., Frederichs, T., Wellner, J.~S., Lamb, R., Leitchenkov, G., and {IODP Expedition 379 Scientists} (2021).
 \newblock Evidence for a {{Highly Dynamic West Antarctic Ice Sheet During}} the {{Pliocene}}.
 \newblock {\em Geophysical Research Letters}, 48(14).
+
+\bibitem[Gohl et~al., 2013]{gohlSeismicStratigraphicRecord2013}
+Gohl, K., {Uenzelmann-Neben}, G., Larter, R.~D., Hillenbrand, C.-D., Hochmuth, K., Kalberg, T., Weigelt, E., Davy, B., Kuhn, G., and Nitsche, F.~O. (2013).
+\newblock Seismic stratigraphic record of the {{Amundsen Sea Embayment}} shelf from pre-glacial to recent times: {{Evidence}} for a dynamic {{West Antarctic}} ice sheet.
+\newblock {\em Marine Geology}, 344:115--131.
 
 \bibitem[Goldsby and Kohlstedt, 2001]{goldsbySuperplasticDeformationIce2001}
 Goldsby, D.~L. and Kohlstedt, D.~L. (2001).
 \newblock Superplastic deformation of ice: {{Experimental}} observations.
 \newblock {\em Journal of Geophysical Research: Solid Earth}, 106(B6):11017--11030.
 
+\bibitem[Golledge et~al., 2015]{golledgeMultimillennialAntarcticCommitment2015}
+Golledge, N.~R., Kowalewski, D.~E., Naish, T.~R., Levy, R.~H., Fogwill, C.~J., and Gasson, E. G.~W. (2015).
+\newblock The multi-millennial {{Antarctic}} commitment to future sea-level rise.
+\newblock {\em Nature}, 526(7573):421--425.
+
+\bibitem[Golledge et~al., 2017a]{golledgeEastAntarcticIce2017}
+Golledge, N.~R., Levy, R.~H., McKay, R.~M., and Naish, T.~R. (2017a).
+\newblock East {{Antarctic}} ice sheet most vulnerable to {{Weddell Sea}} warming.
+\newblock {\em Geophysical Research Letters}, 44(5):2343--2351.
+
+\bibitem[Golledge et~al., 2017b]{golledgeAntarcticClimateIcesheet2017}
+Golledge, N.~R., Thomas, Z.~A., Levy, R.~H., Gasson, E. G.~W., Naish, T.~R., McKay, R.~M., Kowalewski, D.~E., and Fogwill, C.~J. (2017b).
+\newblock Antarctic climate and ice-sheet configuration during the early {{Pliocene}} interglacial at 4.23 {{Ma}}.
+\newblock {\em Climate of the Past}, 13(7):959--975.
+
 \bibitem[Grant et~al., 2019]{grantAmplitudeOriginSealevel2019}
 Grant, G.~R., Naish, T.~R., Dunbar, G.~B., Stocchi, P., Kominz, M.~A., Kamp, P. J.~J., Tapia, C.~A., McKay, R.~M., Levy, R.~H., and Patterson, M.~O. (2019).
 \newblock The amplitude and origin of sea-level variability during the {{Pliocene}} epoch.
 \newblock {\em Nature}, 574(7777):237--241.
+
+\bibitem[Grant and Naish, 2021]{grantPlioceneSeaLevel2021}
+Grant, {\relax GR}. and Naish, {\relax TR}. (2021).
+\newblock Pliocene sea level revisited: {{Is}} there more than meets the eye?
+\newblock {\em Past Global Changes Magazine}, 29(1):34--35.
 
 \bibitem[Greenbaum et~al., 2015]{greenbaumOceanAccessCavity2015}
 Greenbaum, J.~S., Blankenship, D.~D., Young, D.~A., Richter, T.~G., Roberts, J.~L., Aitken, A. R.~A., Legresy, B., Schroeder, D.~M., Warner, R.~C., {van Ommen}, T.~D., and Siegert, M.~J. (2015).
 \newblock Ocean access to a cavity beneath {{Totten Glacier}} in {{East Antarctica}}.
 \newblock {\em Nature Geoscience}, 8(4):294--298.
 
+\bibitem[Greve et~al., 2023]{greveFutureProjectionsAntarctic2023}
+Greve, R., Chambers, C., Obase, T., Saito, F., Chan, W.-L., and {Abe-Ouchi}, A. (2023).
+\newblock Future projections for the {{Antarctic}} ice sheet until the year 2300 with a climate-index method.
+\newblock {\em Journal of Glaciology}, pages 1--11.
+
 \bibitem[Gudmundsson et~al., 2019]{gudmundssonInstantaneousAntarcticIce2019}
 Gudmundsson, G.~H., Paolo, F.~S., Adusumilli, S., and Fricker, H.~A. (2019).
 \newblock Instantaneous {{Antarctic}} ice sheet mass loss driven by thinning ice shelves.
 \newblock {\em Geophysical Research Letters}, 46(23):13903--13909.
+
+\bibitem[Gulick et~al., 2017]{gulickInitiationLongtermInstability2017}
+Gulick, S. P.~S., Shevenell, A.~E., Montelli, A., Fernandez, R., Smith, C., Warny, S., Bohaty, S.~M., Sjunneskog, C., Leventer, A., Frederick, B., and Blankenship, D.~D. (2017).
+\newblock Initiation and long-term instability of the {{East Antarctic Ice Sheet}}.
+\newblock {\em Nature}, 552(7684):225--229.
 
 \bibitem[Hogg and Gudmundsson, 2017]{hoggImpactsLarsenCIce2017}
 Hogg, A.~E. and Gudmundsson, G.~H. (2017).
@@ -218,6 +327,11 @@ Hogg, A.~E. and Gudmundsson, G.~H. (2017).
 Hooijer, A. and Vernimmen, R. (2021).
 \newblock Global {{LiDAR}} land elevation data reveal greatest sea-level rise vulnerability in the tropics.
 \newblock {\em Nature Communications}, 12(1):3592.
+
+\bibitem[Horikawa et~al., 2026]{horikawaRepeatedMajorInland2026}
+Horikawa, K., Iwai, M., Hillenbrand, C.-D., Siddoway, C.~S., Halberstadt, A.~R., Cowan, E.~A., Penkrot, M.~L., Gohl, K., Wellner, J.~S., Asahara, Y., Shin, K.-C., Noda, M., Fujimoto, M., {Expedition 379 Science Party}, Gohl, K., Wellner, J.~S., Klaus, A., Kulhanek, D., Bauersachs, T., Bohaty, S.~M., Courtillat, M., Cowan, E.~A., De~Lira~Mota, M.~A., Esteves, M.~S., Fegyveresi, J.~M., Frederichs, T., Gao, L., Halberstadt, A.~R., Hillenbrand, C.-D., Iwai, M., Kim, J.-H., King, T.~M., Klages, J.~P., Passchier, S., Penkrot, M.~L., Prebble, J.~G., Rahaman, W., Reinardy, B.~T., Renaudie, J., Robinson, D.~E., Scherer, R.~P., Siddoway, C.~S., Wu, L., and Yamane, M. (2026).
+\newblock Repeated major inland retreat of {{Thwaites}} and {{Pine Island}} glaciers ({{West Antarctica}}) during the {{Pliocene}}.
+\newblock {\em Proceedings of the National Academy of Sciences}, 123(1):e2508341122.
 
 \bibitem[Jacobs, 1991]{jacobsNatureSignificanceAntarctic1991}
 Jacobs, S.~S. (1991).
@@ -243,6 +357,11 @@ Joughin, I. and Alley, R.~B. (2011).
 Joughin, I., Rignot, E., Rosanova, C.~E., Lucchitta, B.~K., and Bohlander, J. (2003).
 \newblock Timing of {{Recent Accelerations}} of {{Pine Island Glacier}}, {{Antarctica}}: {{RECENT ACCELERATIONS OF PINE ISLAND GLACIER}}.
 \newblock {\em Geophysical Research Letters}, 30(13).
+
+\bibitem[Jourdain et~al., 2020]{jourdainProtocolCalculatingBasal2020b}
+Jourdain, N.~C., {Asay-Davis}, X., Hattermann, T., Straneo, F., Seroussi, H., Little, C.~M., and Nowicki, S. (2020).
+\newblock A protocol for calculating basal melt rates in the {{ISMIP6 Antarctic}} ice sheet projections.
+\newblock {\em The Cryosphere}, 14(9):3111--3134.
 
 \bibitem[Kachuck et~al., 2020]{kachuckRapidViscoelasticDeformation2020}
 Kachuck, S.~B., Martin, D.~F., Bassis, J.~N., and Price, S.~F. (2020).
@@ -279,10 +398,35 @@ Lipscomb, W.~H., Price, S.~F., Hoffman, M.~J., Leguy, G.~R., Bennett, A.~R., Bra
 \newblock Description and evaluation of the {{Community Ice Sheet Model}} ({{CISM}}) v2.1.
 \newblock {\em Geoscientific Model Development}, 12(1):387--424.
 
+\bibitem[Lowry et~al., 2021]{lowryInfluenceEmissionsScenarios2021}
+Lowry, D.~P., Krapp, M., Golledge, N.~R., and {Alevropoulos-Borrill}, A. (2021).
+\newblock The influence of emissions scenarios on future {{Antarctic}} ice loss is unlikely to emerge this century.
+\newblock {\em Communications Earth \& Environment}, 2(1):1--14.
+
+\bibitem[Martin et~al., 2019]{martinMillennialScaleVulnerabilityAntarctic2019}
+Martin, D.~F., Cornford, S.~L., and Payne, A.~J. (2019).
+\newblock Millennial-{{Scale Vulnerability}} of the {{Antarctic Ice Sheet}} to {{Regional Ice Shelf Collapse}}.
+\newblock {\em Geophysical Research Letters}, 46(3):1467--1475.
+
 \bibitem[Martin et~al., 2026]{martinRatesSeaLevelRise2026}
 Martin, D.~F., Kachuck, S.~B., Trevers, M., Millstein, J.~D., Cornford, S.~L., and Minchew, B.~M. (2026).
 \newblock Rates of {{Sea}}-{{Level Rise Are Highly Sensitive}} to {{Ice Viscosity Parameters}} in {{Model Benchmarks}}.
 \newblock {\em AGU Advances}, 7(2):e2025AV001946.
+
+\bibitem[Meinshausen et~al., 2020]{meinshausenSharedSocioeconomicPathway2020}
+Meinshausen, M., Nicholls, Z. R.~J., Lewis, J., Gidden, M.~J., Vogel, E., Freund, M., Beyerle, U., Gessner, C., Nauels, A., Bauer, N., Canadell, J.~G., Daniel, J.~S., John, A., Krummel, P.~B., Luderer, G., Meinshausen, N., Montzka, S.~A., Rayner, P.~J., Reimann, S., Smith, S.~J., {van den Berg}, M., Velders, G. J.~M., Vollmer, M.~K., and Wang, R. H.~J. (2020).
+\newblock The shared socio-economic pathway ({{SSP}}) greenhouse gas concentrations and their extensions to 2500.
+\newblock {\em Geoscientific Model Development}, 13(8):3571--3605.
+
+\bibitem[Meinshausen et~al., 2011]{meinshausenRCPGreenhouseGas2011}
+Meinshausen, M., Smith, S.~J., Calvin, K., Daniel, J.~S., Kainuma, M. L.~T., Lamarque, J.-F., Matsumoto, K., Montzka, S.~A., Raper, S. C.~B., Riahi, K., Thomson, A., Velders, G. J.~M., and Van~Vuuren, D.~P. (2011).
+\newblock The {{RCP}} greenhouse gas concentrations and their extensions from 1765 to 2300.
+\newblock {\em Climatic Change}, 109(1-2):213--241.
+
+\bibitem[Mengel and Levermann, 2014]{mengelIcePlugPrevents2014}
+Mengel, M. and Levermann, A. (2014).
+\newblock Ice plug prevents irreversible discharge from {{East Antarctica}}.
+\newblock {\em Nature Climate Change}, 4(6):451--455.
 
 \bibitem[Mercer, 1978]{mercerWestAntarcticIce1978}
 Mercer, J.~H. (1978).
@@ -319,6 +463,11 @@ Morris, E.~M. and Vaughan, D.~G. (2013).
 \newblock Spatial and {{Temporal Variation}} of {{Surface Temperature}} on the {{Antarctic Peninsula And The Limit}} of {{Viability}} of {{Ice Shelves}}.
 \newblock In Domack, E., Levente, A., Burnet, A., Bindschadler, R., Convey, P., and Kirby, M., editors, {\em Antarctic {{Research Series}}}, pages 61--68. American Geophysical Union, Washington, D. C.
 
+\bibitem[Muntjewerf et~al., 2021]{muntjewerfDescriptionDemonstrationCoupled2021}
+Muntjewerf, L., Sacks, W.~J., Lofverstrom, M., Fyke, J., Lipscomb, W.~H., Ernani Da~Silva, C., Vizcaino, M., Thayer-Calder, K., Lenaerts, J. T.~M., and Sellevold, R. (2021).
+\newblock Description and {{Demonstration}} of the {{Coupled Community Earth System Model}} v2 -- {{Community Ice Sheet Model}} v2 ({{CESM2}}-{{CISM2}}).
+\newblock {\em Journal of Advances in Modeling Earth Systems}, 13(6):e2020MS002356.
+
 \bibitem[Naish et~al., 2009]{naishObliquitypacedPlioceneWest2009}
 Naish, T., Powell, R., Levy, R., Wilson, G., Scherer, R., Talarico, F., Krissek, L., Niessen, F., Pompilio, M., Wilson, T., Carter, L., DeConto, R., Huybers, P., McKay, R., Pollard, D., Ross, J., Winter, D., Barrett, P., Browne, G., Cody, R., Cowan, E., Crampton, J., Dunbar, G., Dunbar, N., Florindo, F., Gebhardt, C., Graham, I., Hannah, M., Hansaraj, D., Harwood, D., Helling, D., Henrys, S., Hinnov, L., Kuhn, G., Kyle, P., L{\"a}ufer, A., Maffioli, P., Magens, D., Mandernack, K., McIntosh, W., Millan, C., Morin, R., Ohneiser, C., Paulsen, T., Persico, D., Raine, I., Reed, J., Riesselman, C., Sagnotti, L., Schmitt, D., Sjunneskog, C., Strong, P., Taviani, M., Vogel, S., Wilch, T., and Williams, T. (2009).
 \newblock Obliquity-paced {{Pliocene West Antarctic}} ice sheet oscillations.
@@ -333,6 +482,11 @@ Naughten, K.~A., Holland, P.~R., and De~Rydt, J. (2023).
 Nicola, L., Notz, D., and Winkelmann, R. (2023).
 \newblock Revisiting temperature sensitivity: How does {{Antarctic}} precipitation change with temperature?
 \newblock {\em The Cryosphere}, 17(7):2563--2583.
+
+\bibitem[Nowicki et~al., 2020]{nowickiExperimentalProtocolSea2020}
+Nowicki, S., Goelzer, H., Seroussi, H., Payne, A.~J., Lipscomb, W.~H., {Abe-Ouchi}, A., Agosta, C., Alexander, P., {Asay-Davis}, X.~S., Barthel, A., Bracegirdle, T.~J., Cullather, R., Felikson, D., Fettweis, X., Gregory, J.~M., Hattermann, T., Jourdain, N.~C., Kuipers~Munneke, P., Larour, E., Little, C.~M., Morlighem, M., Nias, I., Shepherd, A., Simon, E., Slater, D., Smith, R.~S., Straneo, F., Trusel, L.~D., {van den Broeke}, M.~R., and {van de Wal}, R. (2020).
+\newblock Experimental protocol for sea level projections from {{ISMIP6}} stand-alone ice sheet models.
+\newblock {\em The Cryosphere}, 14(7):2331--2368.
 
 \bibitem[Nowicki et~al., 2016]{nowickiIceSheetModel2016}
 Nowicki, S. M.~J., Payne, A., Larour, E., Seroussi, H., Goelzer, H., Lipscomb, W., Gregory, J., {Abe-Ouchi}, A., and Shepherd, A. (2016).
@@ -354,6 +508,21 @@ Paolo, F.~S., Fricker, H.~A., and Padman, L. (2015).
 \newblock Volume loss from {{Antarctic}} ice shelves is accelerating.
 \newblock {\em Science}, 348(6232):327--331.
 
+\bibitem[Passchier et~al., 2025]{passchierWestAntarcticIce2025}
+Passchier, S., Hillenbrand, C.-D., Hemming, S., Ehrmann, W., Frederichs, T., Bohaty, S.~M., Leon, R., {Libman-Roshal}, O., {Mino-Moreira}, L., Gohl, K., and Wellner, J. (2025).
+\newblock West {{Antarctic}} ice retreat and paleoceanography in the {{Amundsen Sea}} in the warm early {{Pliocene}}.
+\newblock {\em Nature Communications}, 16(1):5609.
+
+\bibitem[Patterson et~al., 2014]{pattersonOrbitalForcingEast2014}
+Patterson, M.~O., McKay, R., Naish, T., Escutia, C., {Jimenez-Espejo}, F.~J., Raymo, M.~E., Meyers, S.~R., Tauxe, L., and Brinkhuis, H. (2014).
+\newblock Orbital forcing of the {{East Antarctic}} ice sheet during the {{Pliocene}} and {{Early Pleistocene}}.
+\newblock {\em Nature Geoscience}, 7(11):841--847.
+
+\bibitem[Patterson et~al., 2026]{pattersonSpatiallyVariableResponse2026}
+Patterson, M.~O., Rosenberg, C., Seki, O., Yamamoto, M., Romero, O.~E., Nelissen, M., Sangiorgi, F., Golledge, N.~R., Grant, G., Arnuk, W.~D., Keisling, B., Naish, T., Levy, R., Meyers, S., Sullivan, N., Ash, J., Kulhanek, D., Romans, B.~W., Varela~Valenzuela, N., Jones, H., Beny, F., Browne, I., Cortese, G., Sousa, I. M.~C., Dodd, J.~P., Esper, O.~M., Gales, J., Harwood, D., Ishino, S., Kim, S., Kim, S., Laberg, J.~S., Leckie, R.~M., M{\"u}ller, J., Shevenell, A., Singh, S., Sugisaki, S.~T., Van De~Flierdt, T., Van~Peer, T., Xiao, W., Xiong, Z., De~Santis, L., and McKay, R. (2026).
+\newblock Spatially variable response of {{Antarctica}}'s ice sheets to orbital forcing during the {{Pliocene}}.
+\newblock {\em Nature Geoscience}, 19(2):182--188.
+
 \bibitem[Pattyn and Morlighem, 2020]{pattynUncertainFutureAntarctic2020}
 Pattyn, F. and Morlighem, M. (2020).
 \newblock The uncertain future of the {{Antarctic Ice Sheet}}.
@@ -364,10 +533,10 @@ Payne, A.~J., Vieli, A., Shepherd, A.~P., Wingham, D.~J., and Rignot, E. (2004).
 \newblock Recent dramatic thinning of largest {{West Antarctic}} ice stream triggered by oceans: {{THINNING OF LARGEST WEST ANTARCTIC ICE STREAM}}.
 \newblock {\em Geophysical Research Letters}, 31(23).
 
-\bibitem[Pollard and DeConto, 2009]{pollardModellingWestAntarctic2009}
-Pollard, D. and DeConto, R.~M. (2009).
-\newblock Modelling {{West Antarctic}} ice sheet growth and collapse through the past five million years.
-\newblock {\em Nature}, 458(7236):329--332.
+\bibitem[Pollard et~al., 2015]{pollardPotentialAntarcticIce2015}
+Pollard, D., DeConto, R.~M., and Alley, R.~B. (2015).
+\newblock Potential {{Antarctic Ice Sheet}} retreat driven by hydrofracturing and ice cliff failure.
+\newblock {\em Earth and Planetary Science Letters}, 412:112--121.
 
 \bibitem[Previdi et~al., 2021]{previdiArcticAmplificationClimate2021}
 Previdi, M., Smith, K.~L., and Polvani, L.~M. (2021).
@@ -379,10 +548,20 @@ Pudsey, C.~J. and Evans, J. (2001).
 \newblock First survey of {{Antarctic}} sub--ice shelf sediments reveals mid-{{Holocene}} ice shelf retreat.
 \newblock {\em Geology}, 29(9):787.
 
+\bibitem[Raymo et~al., 2018]{raymoAccuracyMidPlioceneD18Obased2018}
+Raymo, M.~E., Kozdon, R., Evans, D., Lisiecki, L., and Ford, H.~L. (2018).
+\newblock The accuracy of mid-{{Pliocene $\delta$18O-based}} ice volume and sea level reconstructions.
+\newblock {\em Earth-Science Reviews}, 177:291--302.
+
 \bibitem[Rentschler et~al., 2023]{rentschlerGlobalEvidenceRapid2023}
 Rentschler, J., Avner, P., Marconcini, M., Su, R., Strano, E., Vousdoukas, M., and Hallegatte, S. (2023).
 \newblock Global evidence of rapid urban growth in flood zones since 1985.
 \newblock {\em Nature}, 622(7981):87--92.
+
+\bibitem[Riahi et~al., 2017]{riahiSharedSocioeconomicPathways2017}
+Riahi, K., {van Vuuren}, D.~P., Kriegler, E., Edmonds, J., O'Neill, B.~C., Fujimori, S., Bauer, N., Calvin, K., Dellink, R., Fricko, O., Lutz, W., Popp, A., Cuaresma, J.~C., Kc, S., Leimbach, M., Jiang, L., Kram, T., Rao, S., Emmerling, J., Ebi, K., Hasegawa, T., Havlik, P., Humpen{\"o}der, F., Da~Silva, L.~A., Smith, S., Stehfest, E., Bosetti, V., Eom, J., Gernaat, D., Masui, T., Rogelj, J., Strefler, J., Drouet, L., Krey, V., Luderer, G., Harmsen, M., Takahashi, K., Baumstark, L., Doelman, J.~C., Kainuma, M., Klimont, Z., Marangoni, G., {Lotze-Campen}, H., Obersteiner, M., Tabeau, A., and Tavoni, M. (2017).
+\newblock The {{Shared Socioeconomic Pathways}} and their energy, land use, and greenhouse gas emissions implications: {{An}} overview.
+\newblock {\em Global Environmental Change}, 42:153--168.
 
 \bibitem[Rignot et~al., 2004]{rignotAcceleratedIceDischarge2004}
 Rignot, E., Casassa, G., Gogineni, P., Krabill, W., Rivera, A., and Thomas, R. (2004).
@@ -439,6 +618,11 @@ Seeger, K. and Minderhoud, P. S.~J. (2026).
 \newblock Sea level much higher than assumed in most coastal hazard assessments.
 \newblock {\em Nature}.
 
+\bibitem[Seidenstein et~al., 2024]{seidensteinPliocenePleistoceneWarmwater2024}
+Seidenstein, J.~L., Leckie, R.~M., McKay, R., De~Santis, L., Harwood, D., and {IODP Expedition 374 Scientists} (2024).
+\newblock Pliocene--{{Pleistocene}} warm-water incursions and water mass changes on the {{Ross Sea}} continental shelf ({{Antarctica}}) based on foraminifera from {{IODP Expedition}} 374.
+\newblock {\em Journal of Micropalaeontology}, 43(2):211--238.
+
 \bibitem[Sella et~al., 2007]{sellaObservationGlacialIsostatic2007}
 Sella, G.~F., Stein, S., Dixon, T.~H., Craymer, M., James, T.~S., Mazzotti, S., and Dokka, R.~K. (2007).
 \newblock Observation of glacial isostatic adjustment in ``stable'' {{North America}} with {{GPS}}.
@@ -449,10 +633,20 @@ Seroussi, H., Nowicki, S., Payne, A.~J., Goelzer, H., Lipscomb, W.~H., {Abe-Ouch
 \newblock {{ISMIP6 Antarctica}}: A multi-model ensemble of the {{Antarctic}} ice sheet evolution over the 21st century.
 \newblock {\em The Cryosphere}, 14(9):3033--3070.
 
+\bibitem[Seroussi et~al., 2019]{seroussiInitMIPAntarcticaIceSheet2019}
+Seroussi, H., Nowicki, S., Simon, E., {Abe-Ouchi}, A., Albrecht, T., Brondex, J., Cornford, S., Dumas, C., {Gillet-Chaulet}, F., Goelzer, H., Golledge, N.~R., Gregory, J.~M., Greve, R., Hoffman, M.~J., Humbert, A., Huybrechts, P., Kleiner, T., Larour, E., Leguy, G., Lipscomb, W.~H., Lowry, D., Mengel, M., Morlighem, M., Pattyn, F., Payne, A.~J., Pollard, D., Price, S.~F., Quiquet, A., Reerink, T.~J., Reese, R., Rodehacke, C.~B., Schlegel, N.-J., Shepherd, A., Sun, S., Sutter, J., Van~Breedam, J., {van de Wal}, R. S.~W., Winkelmann, R., and Zhang, T. (2019).
+\newblock {{initMIP-Antarctica}}: An ice sheet model initialization experiment of {{ISMIP6}}.
+\newblock {\em The Cryosphere}, 13(5):1441--1471.
+
 \bibitem[Seroussi et~al., 2024]{seroussiEvolutionAntarcticIce2024}
 Seroussi, H., Pelle, T., Lipscomb, W.~H., Abe-Ouchi, A., Albrecht, T., Alvarez-Solas, J., Asay-Davis, X., Barre, J.-B., Berends, C.~J., Bernales, J., Blasco, J., Caillet, J., Chandler, D.~M., Coulon, V., Cullather, R., Dumas, C., Galton-Fenzi, B.~K., Garbe, J., Gillet-Chaulet, F., Gladstone, R., Goelzer, H., Golledge, N., Greve, R., Gudmundsson, G.~H., Han, H.~K., Hillebrand, T.~R., Hoffman, M.~J., Huybrechts, P., Jourdain, N.~C., Klose, A.~K., Langebroek, P.~M., Leguy, G.~R., Lowry, D.~P., Mathiot, P., Montoya, M., Morlighem, M., Nowicki, S., Pattyn, F., Payne, A.~J., Quiquet, A., Reese, R., Robinson, A., Saraste, L., Simon, E.~G., Sun, S., Twarog, J.~P., Trusel, L.~D., Urruty, B., Van~Breedam, J., Van De~Wal, R. S.~W., Wang, Y., Zhao, C., and Zwinger, T. (2024).
 \newblock Evolution of the {{Antarctic Ice Sheet Over}} the {{Next Three Centuries From}} an {{ISMIP6 Model Ensemble}}.
 \newblock {\em Earth's Future}, 12(9):e2024EF004561.
+
+\bibitem[Seroussi et~al., 2023]{seroussiInsightsVulnerabilityAntarctic2023}
+Seroussi, H., Verjans, V., Nowicki, S., Payne, A.~J., Goelzer, H., Lipscomb, W.~H., {Abe-Ouchi}, A., Agosta, C., Albrecht, T., {Asay-Davis}, X., Barthel, A., Calov, R., Cullather, R., Dumas, C., {Galton-Fenzi}, B.~K., Gladstone, R., Golledge, N.~R., Gregory, J.~M., Greve, R., Hattermann, T., Hoffman, M.~J., Humbert, A., Huybrechts, P., Jourdain, N.~C., Kleiner, T., Larour, E., Leguy, G.~R., Lowry, D.~P., Little, C.~M., Morlighem, M., Pattyn, F., Pelle, T., Price, S.~F., Quiquet, A., Reese, R., Schlegel, N.-J., Shepherd, A., Simon, E., Smith, R.~S., Straneo, F., Sun, S., Trusel, L.~D., Van~Breedam, J., Van~Katwyk, P., Van De~Wal, R. S.~W., Winkelmann, R., Zhao, C., Zhang, T., and Zwinger, T. (2023).
+\newblock Insights into the vulnerability of {{Antarctic}} glaciers from the {{ISMIP6}} ice sheet model ensemble and associated uncertainty.
+\newblock {\em The Cryosphere}, 17(12):5197--5217.
 
 \bibitem[Shepherd et~al., 2019]{shepherdTrendsAntarcticIce2019}
 Shepherd, A., Gilbert, L., Muir, A.~S., Konrad, H., McMillan, M., Slater, T., Briggs, K.~H., Sundal, A.~V., Hogg, A.~E., and Engdahl, M.~E. (2019).
@@ -468,6 +662,11 @@ Shepherd, A., Wingham, D., Payne, T., and Skvarca, P. (2003).
 Si, Y., Stewart, A.~L., and Eisenman, I. (2023).
 \newblock Heat transport across the {{Antarctic Slope Front}} controlled by cross-slope salinity gradients.
 \newblock {\em Science Advances}, 9(18):eadd7049.
+
+\bibitem[Siahaan et~al., 2022]{siahaanAntarcticContribution21stcentury2022}
+Siahaan, A., Smith, R.~S., Holland, P.~R., Jenkins, A., Gregory, J.~M., Lee, V., Mathiot, P., Payne, A.~J., Ridley, J.~K., and Jones, C.~G. (2022).
+\newblock The {{Antarctic}} contribution to 21st-century sea-level rise predicted by the {{UK Earth System Model}} with an interactive ice sheet.
+\newblock {\em The Cryosphere}, 16(10):4053--4086.
 
 \bibitem[Silvano et~al., 2017]{silvanoDistributionWaterMasses2017}
 Silvano, A., Rintoul, S.~R., Pe{\~n}a-Molino, B., and Williams, G.~D. (2017).
@@ -494,10 +693,25 @@ Talley, L.~D. (2013).
 \newblock Closure of the {{Global Overturning Circulation Through}} the {{Indian}}, {{Pacific}}, and {{Southern Oceans}}: {{Schematics}} and {{Transports}}.
 \newblock {\em Oceanography}, 26:80--97.
 
+\bibitem[Taylor et~al., 2012]{taylorOverviewCMIP5Experiment2012}
+Taylor, K.~E., Stouffer, R.~J., and Meehl, G.~A. (2012).
+\newblock An {{Overview}} of {{CMIP5}} and the {{Experiment Design}}.
+\newblock {\em Bulletin of the American Meteorological Society}, 93(4):485--498.
+
+\bibitem[Tierney et~al., 2025]{tierneyPlioceneWarmthPatterns2025}
+Tierney, J.~E., King, J., Osman, M.~B., Abell, J.~T., Burls, N.~J., Erfani, E., Cooper, V.~T., and Feng, R. (2025).
+\newblock Pliocene {{Warmth}} and {{Patterns}} of {{Climate Change Inferred From Paleoclimate Data Assimilation}}.
+\newblock {\em AGU Advances}, 6(1):e2024AV001356.
+
 \bibitem[Tierney et~al., 2020]{tierneyClimatesInformOur2020}
 Tierney, J.~E., Poulsen, C.~J., Monta{\~n}ez, I.~P., Bhattacharya, T., Feng, R., Ford, H.~L., H{\"o}nisch, B., Inglis, G.~N., Petersen, S.~V., Sagoo, N., Tabor, C.~R., Thirumalai, K., Zhu, J., Burls, N.~J., Foster, G.~L., Godd{\'e}ris, Y., Huber, B.~T., Ivany, L.~C., Kirtland~Turner, S., Lunt, D.~J., McElwain, J.~C., Mills, B. J.~W., {Otto-Bliesner}, B.~L., Ridgwell, A., and Zhang, Y.~G. (2020).
 \newblock Past climates inform our future.
 \newblock {\em Science}, 370(6517):eaay3701.
+
+\bibitem[{van Vuuren} et~al., 2011]{vanvuurenRepresentativeConcentrationPathways2011}
+{van Vuuren}, D.~P., Edmonds, J., Kainuma, M., Riahi, K., Thomson, A., Hibbard, K., Hurtt, G.~C., Kram, T., Krey, V., Lamarque, J.-F., Masui, T., Meinshausen, M., Nakicenovic, N., Smith, S.~J., and Rose, S.~K. (2011).
+\newblock The representative concentration pathways: An overview.
+\newblock {\em Climatic Change}, 109(1):5.
 
 \bibitem[Vaughan, 2006]{vaughanRecentTrendsMelting2006}
 Vaughan, D.~G. (2006).
@@ -549,10 +763,10 @@ Williams, T., {van de Flierdt}, T., Hemming, S.~R., Chung, E., Roy, M., and Gold
 \newblock Evidence for iceberg armadas from {{East Antarctica}} in the {{Southern Ocean}} during the late {{Miocene}} and early {{Pliocene}}.
 \newblock {\em Earth and Planetary Science Letters}, 290(3):351--361.
 
-\bibitem[Wilson et~al., 2018]{wilsonIceLossEast2018}
-Wilson, D.~J., Bertram, R.~A., Needham, E.~F., {van de Flierdt}, T., Welsh, K.~J., McKay, R.~M., Mazumder, A., Riesselman, C.~R., {Jimenez-Espejo}, F.~J., and Escutia, C. (2018).
-\newblock Ice loss from the {{East Antarctic Ice Sheet}} during late {{Pleistocene}} interglacials.
-\newblock {\em Nature}, 561(7723):383--386.
+\bibitem[Winnick and Caves, 2015]{winnickOxygenIsotopeMassbalance2015}
+Winnick, M.~J. and Caves, J.~K. (2015).
+\newblock Oxygen isotope mass-balance constraints on {{Pliocene}} sea level and {{East Antarctic Ice Sheet}} stability.
+\newblock {\em Geology}, 43(10):879--882.
 
 \bibitem[Wise et~al., 2017]{wiseEvidenceMarineIcecliff2017}
 Wise, M.~G., Dowdeswell, J.~A., Jakobsson, M., and Larter, R.~D. (2017).
@@ -563,5 +777,10 @@ Wise, M.~G., Dowdeswell, J.~A., Jakobsson, M., and Larter, R.~D. (2017).
 Woodworth, P.~L., Melet, A., Marcos, M., Ray, R.~D., W{\"o}ppelmann, G., Sasaki, Y.~N., Cirano, M., Hibbert, A., Huthnance, J.~M., Monserrat, S., and Merrifield, M.~A. (2019).
 \newblock Forcing {{Factors Affecting Sea Level Changes}} at the {{Coast}}.
 \newblock {\em Surveys in Geophysics}, 40(6):1351--1397.
+
+\bibitem[Zickfeld et~al., 2013]{zickfeldLongTermClimateChange2013}
+Zickfeld, K., Eby, M., Weaver, A.~J., Alexander, K., Crespin, E., Edwards, N.~R., Eliseev, A.~V., Feulner, G., Fichefet, T., Forest, C.~E., Friedlingstein, P., Goosse, H., Holden, P.~B., Joos, F., Kawamiya, M., Kicklighter, D., Kienert, H., Matsumoto, K., Mokhov, I.~I., Monier, E., Olsen, S.~M., Pedersen, J. O.~P., Perrette, M., {Philippon-Berthier}, G., Ridgwell, A., Schlosser, A., Schneider Von~Deimling, T., Shaffer, G., Sokolov, A., Spahni, R., Steinacher, M., Tachiiri, K., Tokos, K.~S., Yoshimori, M., Zeng, N., and Zhao, F. (2013).
+\newblock Long-{{Term Climate Change Commitment}} and {{Reversibility}}: {{An EMIC Intercomparison}}.
+\newblock {\em Journal of Climate}, 26(16):5782--5809.
 
 \end{thebibliography}
