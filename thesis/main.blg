@@ -5,48 +5,47 @@ A level-1 auxiliary file: chapters/Literature_review.aux
 A level-1 auxiliary file: chapters/chapter2.aux
 The style file: apalike.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for ""
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--empty journal in collins2013long
-You've used 157 entries,
+Warning--I didn't find a database entry for ""
+You've used 184 entries,
             1935 wiz_defined-function locations,
-            1472 strings with 64139 characters,
-and the built_in function-call counts, 101671 in all, are:
-= -- 8873
-> -- 8339
-< -- 37
-+ -- 3183
-- -- 3148
-* -- 10730
-:= -- 18246
-add.period$ -- 473
-call.type$ -- 157
-change.case$ -- 2355
-chr.to.int$ -- 156
-cite$ -- 158
-duplicate$ -- 2245
-empty$ -- 4745
-format.name$ -- 3347
-if$ -- 18508
+            1621 strings with 77202 characters,
+and the built_in function-call counts, 122675 in all, are:
+= -- 10622
+> -- 10295
+< -- 41
++ -- 3939
+- -- 3886
+* -- 13005
+:= -- 22031
+add.period$ -- 557
+call.type$ -- 184
+change.case$ -- 2834
+chr.to.int$ -- 183
+cite$ -- 184
+duplicate$ -- 2663
+empty$ -- 5617
+format.name$ -- 4112
+if$ -- 22313
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 156
-newline$ -- 786
-num.names$ -- 475
-pop$ -- 2039
+missing$ -- 182
+newline$ -- 921
+num.names$ -- 562
+pop$ -- 2472
 preamble$ -- 1
-purify$ -- 2355
+purify$ -- 2834
 quote$ -- 0
-skip$ -- 1655
+skip$ -- 1963
 stack$ -- 0
-substring$ -- 5727
-swap$ -- 197
-text.length$ -- 6
+substring$ -- 6809
+swap$ -- 255
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 942
-warning$ -- 1
-while$ -- 587
+type$ -- 1104
+warning$ -- 0
+while$ -- 696
 width$ -- 0
-write$ -- 2042
-(There were 2 warnings)
+write$ -- 2399
+(There was 1 warning)
