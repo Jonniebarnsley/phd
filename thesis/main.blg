@@ -2,50 +2,48 @@ This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: chapters/Literature_review.aux
-A level-1 auxiliary file: chapters/chapter2.aux
+A level-1 auxiliary file: chapters/Methods.aux
 The style file: apalike.bst
 Database file #1: references.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--I didn't find a database entry for ""
-You've used 184 entries,
+You've used 206 entries,
             1935 wiz_defined-function locations,
-            1621 strings with 77202 characters,
-and the built_in function-call counts, 122675 in all, are:
-= -- 10622
-> -- 10295
-< -- 41
-+ -- 3939
-- -- 3886
-* -- 13005
-:= -- 22031
-add.period$ -- 557
-call.type$ -- 184
-change.case$ -- 2834
-chr.to.int$ -- 183
-cite$ -- 184
-duplicate$ -- 2663
-empty$ -- 5617
-format.name$ -- 4112
-if$ -- 22313
+            1724 strings with 85540 characters,
+and the built_in function-call counts, 136676 in all, are:
+= -- 11825
+> -- 11438
+< -- 43
++ -- 4385
+- -- 4318
+* -- 14491
+:= -- 24549
+add.period$ -- 620
+call.type$ -- 206
+change.case$ -- 3162
+chr.to.int$ -- 205
+cite$ -- 206
+duplicate$ -- 2956
+empty$ -- 6275
+format.name$ -- 4570
+if$ -- 24851
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 182
-newline$ -- 921
-num.names$ -- 562
-pop$ -- 2472
+missing$ -- 201
+newline$ -- 1029
+num.names$ -- 626
+pop$ -- 2754
 preamble$ -- 1
-purify$ -- 2834
+purify$ -- 3161
 quote$ -- 0
-skip$ -- 1963
+skip$ -- 2179
 stack$ -- 0
-substring$ -- 6809
-swap$ -- 255
+substring$ -- 7663
+swap$ -- 274
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1104
+type$ -- 1236
 warning$ -- 0
-while$ -- 696
+while$ -- 764
 width$ -- 0
-write$ -- 2399
-(There was 1 warning)
+write$ -- 2677
